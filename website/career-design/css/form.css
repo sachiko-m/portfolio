@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*-------------------------------------
+　　【お問い合わせ】メインエリア
+-------------------------------------*/
+
+.subpage .contact .inner {
+	margin: 0 auto;
+}
+
+.subpage .contact #form1 table {
+	border-collapse: collapse;
+	margin-top: 10px;
+
+}
+.subpage .contact #form1 textarea::placeholder {
+	color: #BBBBBB;
+}
+
+.subpage .contact #form1 input::placeholder {
+	color: #BBBBBB;
+}
+
+.subpage .contact #form1 th {
+	text-align: left;
+	border-bottom: 1px solid #65CD6A;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+	background-color: #F8F8F8;
+	padding-left: 30px;
+	/* [disabled]min-width: 20%; */
+	border-top: 1px solid #65CD6A;
+}
+.subpage .contact #form1 .text {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	/* [disabled]color: #1A7F1F; */
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+}
+
+.subpage .contact #form1 td {
+	border-bottom: 1px solid #65CD6A;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* [disabled]max-width: 80%; */
+	border-top: 1px solid #65CD6A;
+}
+.subpage .contact .inner #form1 #submit {
+	font-size: 1.1em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #65CD6A;
+	color: #FFFFFF;
+	font-weight: bold;
+	-webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.10);
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.10);
+	cursor: pointer;
+}
+.subpage .contact #form1 .submit {
+	text-align: center;
+	border: none;
+	background-color: #FFFFFF;
+}
+.block{
+    display: block;
+}

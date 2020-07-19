@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*-------------------------------------
+　　【会社概要】メインエリア
+-------------------------------------*/
+
+.subpage .company .inner h2 {
+    padding-top: 20px;
+}
+.subpage .company .inner {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.subpage .shacho-message {
+    position: relative;
+    height: 555px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.subpage .company .message {
+    position: absolute;
+    left: 0px;
+    top: 76px;
+    max-width: 1132px;
+}
+.subpage .company .message img{
+    max-width: 100%;
+    height: auto;
+}
+.subpage .company .shacho {
+	bottom: 0px;
+	position: absolute;
+	right: 100px;
+}
+.subpage .company .name {
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    max-width: 1035px;
+}
+.subpage .company .f-container {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.subpage .company .f-container .text {
+    margin-bottom: 10px;
+    width: 55%;
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.subpage .company .f-container .text p {
+    margin-bottom: 1em;
+}
+.subpage .company table  {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    width: 92%;
+}
+.subpage .company th, td {
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: normal;
+}
+.subpage .company th {
+    font-weight: bold;
+}
+
+
+
+

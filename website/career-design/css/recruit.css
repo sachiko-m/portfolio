@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*-------------------------------------
+　　【採用情報】メインエリア
+-------------------------------------*/
+.recruit-cat{
+  font-size: 1.5em;
+  width: 31em;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #3FC26F;
+}
+.recruit table  {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    width: 92%;
+}
+.recruit th, td {
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: normal;
+}
+.recruit th {
+    font-weight: bold;
+}
+.entry-btn a{
+    text-decoration: none;
+    width: 10em;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #575757;
+    border-radius: 3px;
+    text-align: center;
+    margin: 40px auto;
+    display: block
+}
+

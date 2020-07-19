@@ -1,0 +1,614 @@
+@charset "utf-8";
+
+/*-------------------------------------
+　　タグの性質をリセット/#allを定義
+-------------------------------------*/
+
+p,h1,h2,h3,ul,li,body{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  color: #333333;
+}
+img{
+  vertical-align: bottom;
+  border: none;
+}
+
+#all{
+  line-height: 1.7em;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*-------------------------------------
+　　共通の設定
+-------------------------------------*/
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.w-1000{
+  width: 1000px;
+  margin: 0 auto;
+}
+#all a{
+  text-decoration: none;
+}
+.gotop{
+  position: fixed;
+  right:45px;
+  bottom:45px;
+  z-index: 999;
+  display: none;
+}
+
+/*-------------------------------------
+　　ヘッダー・ナビゲーションエリア
+-------------------------------------*/
+header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+  transition: 0.5s;
+  
+}
+header h1{
+  float: left;
+  padding-top: 20px;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+header nav{
+  float: right;
+}
+header nav li{
+  float: left;
+  margin-top: 20px;
+}
+header nav li a{
+  padding: 4px 10px;
+  margin: auto 5px;
+  display: block;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-weight: 550;
+}
+header nav li a.header-ticket-btn{
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-top: -6px;
+  background-color: #d5c251;
+  color: #fff;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.10);
+}
+header nav li a:hover{
+  border-bottom: 2px solid #fff;
+　transition: 0.5s;
+}
+header nav li a.header-ticket-btn:hover{
+  border-bottom: none;
+  background-color: #E5D679;
+  transition: 0.5s;
+}
+
+.top-mainimage{
+    background-image: url(img/top-mainimage_03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    position: relative;
+}
+.top-main-cat{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header-scroll{
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.10);
+  background-color: rgba(3,41,75,0.9);
+  transition: 0.5s;
+}
+
+
+/*-------------------------------------
+　　TOPページ　メインエリア
+-------------------------------------*/
+.message,.news,.recommend,.friend,.access {
+  padding: 80px 0px 80px 0px;
+}
+.top .w-1000{
+  padding: 40px 0px 40px 0px;
+}
+.top h2{
+  font-size: 1.7em;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+  color: #073C6B;
+  letter-spacing: 0.2em;
+}
+.top .friend h2{
+  color: #fff;    
+}
+.top .view-more-btn{
+  text-align: center;
+  margin: 30px auto 0px auto;
+   width: 350px;
+}
+.top .view-more-btn a{
+  background-color: #073C6B;
+  color: #fff;
+  border: 3px solid #073C6B;
+  padding: 20px 40px;
+  border-radius: 3px;
+  display: block;
+  font-weight: bold;
+}
+.top .view-more-btn a:hover{
+  background-color: transparent;
+  transition: 0.6s;
+  border: 3px solid #073C6B;
+  color: #073C6B;
+  padding: 20px 40px;
+}
+
+/*　メッセージエリア　*/
+.message{
+  background-color: aliceblue;
+}
+.message .box{
+    padding: 40px;
+}
+.message .flexbox{
+  display: flex;
+  justify-content: space-around;
+}
+.message .text-area{
+    padding: 0px 30px;
+    position: relative
+}
+.message .text-area p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.message .text-area .message-cat{
+    font-size: 5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: #909090;
+    opacity: 0.4;
+    position: absolute;
+    bottom: -40px;
+    right: -90px;
+}
+
+/*　ニュースエリア　*/
+.news{
+  background-color: #C4DFE6;
+  position: relative;
+}
+.news .flexbox{
+  display: flex;
+  justify-content: space-around;
+}
+.news .box{
+  background-color: #fff;
+  padding: 25px;
+  width: 25%;
+  box-shadow: 3px 3px 9px rgba(112,112,112,0.3);
+}
+.news .box h3{
+  color: #03294B;
+  border-bottom: 1px solid #03294B;
+  font-size: 94%;
+  padding: 10px 0px 5px;
+  margin-bottom: 10px;
+}
+.news .box a:hover{
+    display: block;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+/*　オススメコースエリア　*/
+.recommend .flexbox{
+  display: flex;
+  justify-content: space-around;
+}
+.recommend .box{
+    margin-top: 50px;
+}
+.recommend .box .recommend-img{
+    position: relative;
+    display: block;
+    margin: 5px;
+}
+.recommend .box .recommend-img img{
+    border-radius: 7px;
+}
+.recommend .box .recommend-img::before{
+ content: ' ';
+ background-color: rgba(0,0,0,.3);
+ border-radius: 7px;
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+}
+.recommend .box .recommend-img h3{
+     position: absolute;
+     color: #fff;
+     width: 100%;
+     font-size: 1.5em;
+     letter-spacing: 0.2em;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+.recommend .box .recommend-img h3::before{
+    border-bottom: 1px solid #fff;
+}
+.recommend .box a:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+/*　水族館の仲間たちエリア　*/
+.friend{
+    background-image: url(img/friend-bg-img.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.friend .box{
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 4px 4px 10px rgba(112,112,112,0.3);
+    margin-bottom: 40px;
+    padding: 40px;
+    position: relative
+}
+.friend .flex-right{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse;
+}
+.friend .flex-left{
+    display: flex;
+    justify-content: space-around;
+}
+.friend .box .text-area{
+    padding: 0px 30px;
+}
+.friend .box .text-area h3{
+    margin: 30px auto;
+    font-size: 1.5em;
+    border-bottom: 1px solid #fff;
+}
+.name-right{
+    position: absolute;
+    color: #fff;
+    opacity: 0.4;
+    right: 40px;
+    bottom: 50px;
+    font-size: 7em;
+    font-weight: bold;
+}
+.name-left{
+    position: absolute;
+    color: #fff;
+    opacity: 0.4;
+    left: 40px;
+    bottom: 50px;
+    font-size: 7em;
+    font-weight: bold;
+}
+
+
+/*　アクセスエリア　*/
+.access{
+  background-color: aliceblue;
+}
+.map iframe{
+  background-color: aqua;
+  margin: 0 auto;
+  display: block;
+}
+.map{
+  margin: 0 auto;
+  width: 700px;
+}
+.map .text-area{
+  margin-top: 30px;
+}
+
+
+/*-------------------------------------
+　　フッターエリア
+-------------------------------------*/
+footer{
+  background-color: #073C6B;
+}
+
+/*　チケット　リンクエリア　*/
+footer .ticket-btn-area{
+  background-color: #eef0f3;
+  padding: 150px 0px 150px 0px;
+  position: relative;
+}
+footer .ticket-btn-area .flexbox{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer{
+  background-color: #073C6B;
+}
+
+.ticket-link a{
+  background-color: #fff;
+  display: block;
+  border: 10px solid #073C6B;
+  width: 390px;
+  height: 100px;
+}
+.ticket-link .box-1{
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  display: block;
+  border-right: 2px dotted #073C6B;
+}
+.ticket-link .text-1{
+  color: #d5c251;
+  font-size: 1.3em;
+  letter-spacing: 0.2em;
+  padding: 20px 0px 10px 0px;
+  font-weight: bold;
+  display: block;
+}
+.ticket-link .text-2{
+  color: #073C6B;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+/*　サイトマップエリア　*/
+footer .sitemap-area .flexbox{
+  display: flex;
+  justify-content: space-between;
+}
+footer p,footer a{
+  color: #fff;
+}
+footer .sitemap-area a:hover{
+  border-bottom: 1px solid #fff;
+}
+footer .sitemap-area{
+  margin: 50px auto 50px auto;
+  padding: 50px 50px 0px 50px;
+  border-top: 1px solid #fff;
+  width: 900px;
+  background-color: #073C6B;
+}
+.bottomBar{
+  padding: 25px 0px;
+  background-color: #03294B;
+  text-align: center;
+}
+
+/*-------------------------------------
+　　レスポンシブル設定
+-------------------------------------*/
+@media screen and (max-width: 1000px){
+    .w-1000{
+        width: 95%;
+    }
+  footer .sitemap-area{
+        width: 95%;
+        padding: 20px 0px 0px 0px;
+  }
+  img{
+        max-width: 100%;
+        height: auto;
+    } 
+  }
+@media screen and (min-width: 961px){
+    /* ナビゲーションエリア */
+    nav ul{
+        display: block!important;
+    }
+}
+
+@media screen and (max-width: 960px){
+  /* ナビゲーションエリア */
+  nav ul{
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 800;
+    padding: 100px 0 100px 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+  }
+  nav ul li{
+    float: none;
+    text-align: center;
+  }
+  nav ul li a{
+    padding: 15px 0 15px 0; 
+    border-bottom: 1px solid #D3D3D3;
+  }
+  nav ul li a.header-ticket-btn{
+    border-bottom: none;
+    width: 13em;
+    margin: 0px auto;
+  }
+  nav ul li:last-child{
+    padding-top: 30px;
+  }
+    .nav-toggle{
+        width: 30px;
+        height: 26px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .nav-toggle span{
+        width: 100%;
+        height: 4px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        background-color: #fff;
+    }
+    .nav-toggle span:nth-child(1){
+        top: 0px;
+    }
+    .nav-toggle span:nth-child(2){
+        top: 11px;
+    }
+    .nav-toggle span:nth-child(3){
+        top: 22px;
+    }
+
+  /* メッセージエリア */
+  .message .flexbox{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .message .message-cat{
+    display: none;
+  }
+  .message .text-area{
+    padding-top: 20px 0px;
+  }
+  
+  .map{
+    width: 90vw;
+  }
+  .map iframe{
+    width: 90vw;
+  }
+  
+  /* フッター　チケットリンクエリア */
+  footer .ticket-btn-area{
+    padding: 30px 0 150px 0;
+  }
+  .ticket-btn-area .flexbox{
+    flex-direction: column;
+    align-items:center;
+  }
+  .ticket-btn-area .ticket-link{
+    margin-top: 30px;
+    width: 500px;
+  }
+  .ticket-link a{
+  width: 500px;
+  height: 100px;
+}
+  .ticket-link .text-1{
+  padding: 20px 0px 10px 0px;
+}
+  .gotop{
+  right:3vw;
+  bottom:3vh;
+}
+  .gotop img{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 640px){
+  
+  .top .view-more-btn{
+   width: 300px;
+}
+  
+  /* メッセージエリア */
+  .message .box{
+    padding: 20px;
+}
+  .message .text-area{
+    padding: 20px 0 0 0;
+  }
+  
+  /* ニュースエリア */
+  .news .flexbox{
+    flex-direction: column;
+  }
+  .news .flexbox .box{
+    width: 80vw;
+    margin: 0 auto 20px auto;
+  }
+  .news .flexbox .box img{
+    width: 100%;
+  }
+  
+  /* オススメエリア */
+  .recommend .flexbox{
+  flex-direction: column;
+}
+  .recommend .box{
+    margin: 0px;
+  }
+  .recommend .recommend-img{
+    margin-bottom: 20px;
+  }
+  
+  /* 水族館の仲間たちエリア */
+  .friend .flex-right{
+    flex-direction: column;
+}
+.friend .flex-left{
+    flex-direction: column;
+    justify-content: space-around;
+}
+  .friend .box .text-area{
+    padding: 0px;
+  }
+  .friend img{
+    width: 100%;
+  }
+  .friend .name-right,.friend .name-left{
+    font-size: 3em;
+  }
+    
+  /* フッター　チケットリンクエリア */
+  .ticket-btn-area .ticket-link{
+    width: 300px;
+  }
+  .footer .ticket-btn-area{
+    padding: 29px 20px 150px 0;      
+  }
+  .ticket-link a{
+  width: 300px;
+  font-size: 0.9em;
+}
+  .ticket-link .box-1{
+  width: 90%;
+}
+  
+  /* サイトマップエリア */
+  .sitemap-area .flexbox{
+  flex-direction: column;
+}
+  .footer-address,.sitemap-link-1,.sitemap-link-2{
+    margin-bottom: 20px;
+  }
+}

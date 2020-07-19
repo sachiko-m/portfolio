@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AQUARIUMは都会の真ん中にある癒しをテーマにした水族館です。お休みの日はもちろんお仕事帰りにも気軽に立ち寄っていただけます。癒しの空間で生き物たちとゆっくりとお過ごしください。">
+<title>アクア水族館｜TOPページ</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+    <script>
+      //100pxスクロールしたら.gotopを表示
+      $(window).on("scroll", function() {
+        if ($(this).scrollTop() > 100) {
+          $(".gotop").fadeIn(1000);
+        } else {
+          $(".gotop").fadeOut();
+        }
+      });
+</script>
+    <script>
+      $(function(){
+          $(".nav-toggle").on("click",function(){
+          $("nav ul").slideToggle();
+          $(this).toggleClass("open");
+          });
+          });
+    </script>
+    <script>
+          //100pxスクロールしたらheaderに.header-scrollを追加
+          $(window).on("scroll", function() {
+	         if ($(this).scrollTop() > 100) {
+          $("header").addClass("header-scroll");
+           }
+          });
+    </script>
+    <script>
+          //ページの一番上に戻ったらheaderから.header-scrollを削除
+          $(window).on("scroll", function() {
+	         if ($(this).scrollTop() < 100) {
+		      $("header").removeClass("header-scroll");
+	       }
+          });
+    </script>
+</head>
+<body>
+  <div id="all">
+    <header>
+      <div class="w-1000 clearfix">
+          <h1><a href="index.html"><img src="img/logo.png" width="220" height="40" alt="アクアリウム"/></a></h1>
+      <nav>
+        <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <ul class="clearfix">
+          <li><a href="facility.html">施設案内</a></li>
+          <li><a href="ivent.html">イベント</a></li>
+          <li><a href="hours.html">営業時間・料金</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="access.html" class="header-ticket-btn">チケット購入はコチラ</a></li>
+        </ul>
+      </nav>
+        </div>
+    </header>
+    <div class="top-mainimage">
+        <div class="top-main-cat"><img src="img/logo-big_2.png" width="350" height="100" alt="アクアリウム"/></div>
+      </div>
+    <main class="top">
+      <section class="message">
+        <div class="w-1000">
+        <h2>AQUARIUMで癒されよう</h2>
+        <div class="box flexbox">
+        <div class="text-area">
+          <p>AQUARIUMは都会の真ん中にある癒しをテーマにした水族館です。お休みの日はもちろんお仕事帰りにも気軽に立ち寄っていただけます。<br>癒しの空間で生き物たちとゆっくりとお過ごしください。</p>
+        　<p class="message-cat">What's<br><span>AQUARIUM?</span></p>
+        </div>
+          <p><img src="img/message-img.jpg" width="420" height="297" alt="アクアリウム"/></p>
+        </div>
+            <p class="view-more-btn"><a href="#">VIEW MORE</a></p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="w-1000">
+        <h2>AQUARIUMニュース</h2>
+        <div class="flexbox">
+      <div class="box">
+          <a href="#">
+          <p>2020.06.10</p>
+          <p><img src="img/news-img-01.jpg" width="250" height="130" alt="ナイトアクアリウム始めました"/></p>
+          <h3>ナイトアクアリウム始めました</h3>
+          <p>夜19:00以降には館内の照明を落として営業します。日中とは違った夜ならではの雰囲気をお楽しみください！</p>
+              </a>
+        </div>
+      <div class="box">
+          <a href="#">
+          <p>2020.06.07</p>
+          <p><img src="img/news-img-02.jpg" width="250" height="130" alt="ペンギンの赤ちゃんが生まれました"/></p>
+          <h3>ペンギンの赤ちゃん誕生！</h3>
+          <p>マゼランペンギンの赤ちゃんが5羽仲間入りしました！</p>
+          </a>
+        </div>
+      <div class="box">
+          <a href="#">
+          <p>2020.06.01</p>
+          <p><img src="img/news-img-03.jpg" width="250" height="130" alt="クラゲエリアがリニューアル!"/></p>
+          <h3>クラゲエリアがリニューアル!</h3>
+          <p>大人気のクラゲエリアが拡大！広々とした空間でよりゆったりとお楽しみいただけます。</p>
+          </a>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section class="recommend">
+        <div class="w-1000">
+        <h2>オススメのコース</h2>
+      <div class="box flexbox">
+          <a href="#">
+        <div class="recommend-img">
+            <img src="img/recomend-img-01.jpg" width="400" height="150" alt="カップルで癒される"/>
+           <h3>カップルで癒される</h3>
+          </div>
+               </a>
+          <a href="#">
+        <div class="recommend-img">
+            <img src="img/recomend-img-02.jpg" width="400" height="150" alt="お仕事帰りに癒される"/>
+           <h3>お仕事帰りに癒される</h3>
+          </div>
+              </a>
+        </div>
+        <div class="box flexbox">
+            <a href="#">
+        <div class="recommend-img">
+            <img src="img/recomend-img-03.jpg" width="400" height="150" alt="友達と癒される"/>
+           <h3>友達と癒される</h3>
+          </div>
+            </a>
+            <a href="#">
+        <div class="recommend-img">
+            <img src="img/recomend-img-04.jpg" width="400" height="150" alt="ご家族で癒される"/>
+           <h3>ご家族で癒される</h3>
+          </div>
+            </a>
+        </div>
+        </div>
+      </section>
+      <section class="friend">
+        <div class="w-1000">
+        <h2>AQUARIUMの仲間</h2>
+          <div class="box flex-right">
+        <p><img src="img/friend-img-01.jpg" width="400" height="300" alt="カクレクマノミ"/></p>
+              <div class="text-area">
+              <h3>カクレクマノミ</h3>
+              <p>カクレクマノミは、スズキ目スズメダイ科クマノミ亜科に属する海水魚の一種です。センジュイソギンチャクなどのイソギンチャクを住みかとして、また捕食者からの避難のために利用しています。</p>
+              </div>
+              <p class="name-right">Clown fish</p>
+          </div>
+          <div class="box flex-left">
+        <p><img src="img/friend-img-02.jpg" width="400" height="300" alt="クラゲ"/></p>
+              <div class="text-area">
+              <h3>クラゲ</h3>
+              <p>ふわふわと水槽を漂い、観る者を癒してくれるクラゲたち。実は、プランクトンの一種で、体はゼラチン質で柔らかく、透明。多くのものは傘のような形をしています。当館では様々な種類のクラゲを展示しています。</p>
+              </div>
+              <p class="name-left">Jellyfish</p>
+          </div>
+          <div class="box flex-right">
+        <p><img src="img/friend-img-03.jpg" width="400" height="300" alt="ラッコ"/></p>
+              <div class="text-area">
+              <h3>ラッコ</h3>
+              <p>イタチ科ラッコ属に分類される食肉類。食性は肉食で、貝類、甲殻類、ウニ類などを食べています。実は、野生のラッコの数は年々減ってきており、今では絶滅危惧種に指定されています。</p>
+              </div>
+              <p class="name-right">Sea otter</p>
+          </div>
+        <div class="box flex-left">
+        <p><img src="img/friend-img-04.jpg" width="400" height="300" alt="エイ"/></p>
+            <div class="text-area">
+              <h3>エイ</h3>
+              <p>実はサメと同じ分類の「軟骨魚類」「板鰓類」に属するエイ。多くのエイは、ごく平らな体をしていて長く伸びた鞭状の尾を持っています。ヒラヒラとした動きにとっても癒されますね。</p>
+              </div>
+              <p class="name-left">Ray</p>
+          </div>
+        <p class="view-more-btn"><a href="#">VIEW MORE</a></p>
+        </div>
+      </section>
+      <section class="access">
+        <div class="w-1000">
+        <h2>アクセス</h2>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.9862031148664!2d139.75291234853128!3d35.70254567255244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c3f73394261%3A0x6421387fa3cb156d!2z5rC06YGT5qmL6aeF!5e0!3m2!1sja!2sjp!4v1592196209333!5m2!1sja!2sjp" width="700" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="text-area">
+          <p>JR「水道橋駅」西口より徒歩8分</p>
+          <p>東京メトロ丸ノ内線・南北線「後楽園駅」2番出口より徒歩5分</p>
+          </div>
+          </div>
+        <p class="view-more-btn"><a href="#">VIEW MORE</a></p>
+        </div>
+      </section>
+      <p class="gotop"><a href="#all"><img src="img/btn_gotop.png" width="70" height="70" alt="ページトップへ"/></a></p>
+    </main>
+    <footer>
+      <div class="ticket-btn-area">
+        <div class="w-1000 flexbox">
+        <div class="ticket-link"><a href="#"><div class="box-1"><span class="text-1">お得な前売り券はコチラ</span><span class="text-2">ONEDAY PASSPORT</span></div></a></div>
+        <div class="ticket-link"><a href="#"><div class="box-1"><span class="text-1">もっとお得な年間パス</span><span class="text-2">ANNUAL PASSPORT</span></div></a></div>
+      </div>
+        </div>
+      <div class="sitemap-area w-1000">
+          <div class="flexbox">
+        <p><a href="index.html"><img src="img/logo.png" width="220" height="40" alt="アクア水族館"/></a></p>
+        <div class="footer-address">
+        <p>〒123-4567</p>
+        <p>〇〇県○○市〇〇〇〇 1-2-3</p>
+        <p>TEL：000-00-0000</p>
+        </div>
+      <div class="sitemap-link-1">
+        <ul>
+          <li><a href="#">施設案内</a></li>
+          <li><a href="#">イベント情報</a></li>
+          <li><a href="#">営業時間・料金</a></li>
+          <li><a href="#">アクセス</a></li>
+        </ul>
+        </div>
+      <div class="sitemap-link-2">
+        <ul>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">採用情報</a></li>
+        </ul>
+      </div>
+        </div>
+        </div>
+      <div class="bottomBar">
+        <p>copyright (c) 2019 aquarium Co.,Ltd. all rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>

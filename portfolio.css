@@ -152,6 +152,7 @@
     }
     .sub-works .content .link-btn a:hover{
         background-color: #c4a482;
+        transition: 0.7s;
     }
 
     /*―――――――――――――――――――――――――――――――――――――――

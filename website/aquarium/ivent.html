@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AQUARIUMは都会の真ん中にある癒しをテーマにした水族館です。お休みの日はもちろんお仕事帰りにも気軽に立ち寄っていただけます。癒しの空間で生き物たちとゆっくりとお過ごしください。">
+<title>アクア水族館｜TOPページ</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+    <script>
+      $(function(){
+          $(".nav-toggle").on("click",function(){
+          $("nav ul").slideToggle();
+          $(this).toggleClass("open");
+          });
+          });
+    </script>
+    <script>
+          //100pxスクロールしたらheaderに.header-scrollを追加
+          $(window).on("scroll", function() {
+	         if ($(this).scrollTop() > 100) {
+          $("header").addClass("header-scroll");
+           }
+          });
+    </script>
+    <script>
+          //ページの一番上に戻ったらheaderから.header-scrollを削除
+          $(window).on("scroll", function() {
+	         if ($(this).scrollTop() < 100) {
+		      $("header").removeClass("header-scroll");
+	       }
+          });
+    </script>
+</head>
+<body>
+  <div id="all">
+    <header>
+      <div class="w-1000 clearfix">
+          <h1><a href="index.html"><img src="img/logo.png" width="220" height="40" alt="アクアリウム"/></a></h1>
+      <nav>
+        <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <ul class="clearfix">
+          <li><a href="facility.html">施設案内</a></li>
+          <li><a href="ivent.html">イベント</a></li>
+          <li><a href="hours.html">営業時間・料金</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="access.html" class="header-ticket-btn">チケット購入はコチラ</a></li>
+        </ul>
+      </nav>
+        </div>
+    </header>
+    <div class="top-mainimage">
+        <div class="top-main-cat"><img src="img/logo-big.png" width="350" height="100" alt="アクアリウム"/></div>
+      </div>
+    <main class="subpage">
+      <div class="facility">
+        <div class="w-1000">
+        <h2>イベント</h2>
+        <div class="box flexbox">
+          <p>工事中</p>
+        </div>
+        </div>
+      </div>    
+    </main>
+    <footer>
+      <div class="ticket-btn-area">
+        <div class="w-1000 flexbox">
+        <div class="ticket-link"><a href="#"><div class="box-1"><span class="text-1">お得な前売り券はコチラ</span><span class="text-2">ONEDAY PASSPORT</span></div></a></div>
+        <div class="ticket-link"><a href="#"><div class="box-1"><span class="text-1">もっとお得な年間パス</span><span class="text-2">ANNUAL PASSPORT</span></div></a></div>
+      </div>
+        </div>
+      <div class="sitemap-area w-1000">
+          <div class="flexbox">
+        <p><a href="index.html"><img src="img/logo.png" width="220" height="40" alt="アクア水族館"/></a></p>
+        <div class="footer-address">
+        <p>〒123-4567</p>
+        <p>〇〇県○○市〇〇〇〇 1-2-3</p>
+        <p>TEL：000-00-0000</p>
+        </div>
+      <div class="sitemap-link-1">
+        <ul>
+          <li><a href="#">施設案内</a></li>
+          <li><a href="#">イベント情報</a></li>
+          <li><a href="#">営業時間・料金</a></li>
+          <li><a href="#">アクセス</a></li>
+        </ul>
+        </div>
+      <div class="sitemap-link-2">
+        <ul>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">採用情報</a></li>
+        </ul>
+      </div>
+        </div>
+        </div>
+      <div class="bottomBar">
+        <p>copyright (c) 2019 aquarium Co.,Ltd. all rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>

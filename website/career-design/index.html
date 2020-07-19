@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社キャリアデザイン|TOPページ</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+ <script>
+   //100pxスクロールしたら.gotopを表示
+$(window).on("scroll", function() {
+	if ($(this).scrollTop() > 100) {
+		$(".gotop").fadeIn(1000);
+	} else {
+		$(".gotop").fadeOut();
+	}
+});
+</script>
+    <script>
+  //100pxスクロールしたらheaderに.header-scrollを追加
+    $(window).on("scroll", function() {
+	if ($(this).scrollTop() > 100) {
+		$("header").addClass("header-scroll");
+        $(".logo-white").addClass("display-none");
+        $(".logo-black-2").addClass("display-block");
+        $(".top-color-black").addClass("font-color-black");
+	}
+});
+    </script>
+  <script>
+  //ページの一番上に戻ったらheaderから.header-scrollを削除
+    $(window).on("scroll", function() {
+	if ($(this).scrollTop() < 100) {
+		$("header").removeClass("header-scroll");
+        $(".logo-white").removeClass("display-none");
+        $(".logo-black-2").removeClass("display-block");
+        $(".top-color-black").removeClass("font-color-black");
+	}
+});
+    </script>
+    <script>
+$(function(){
+  //#nav-toggleをクリックした時の設定
+  $(".nav-toggle").on("click",function(){
+    
+    //ナビゲーションを開閉
+    $("nav ul").slideToggle();
+    
+    //#nav-toggleにクラス名[open]を追加・削除
+    $(this).toggleClass("open");
+  });
+});
+</script>
+</head>
+
+<body>
+<div id="all">
+    
+<!----------------------- ヘッダー＆メインイメージエリア ------------------------->
+<header>
+    <div class="header-inner">
+    <h1><a href="index.html" class="logo-white"><img src="img/logo_header.png" width="189" height="50" alt="株式会社キャリアデザイン"/></a>
+        <a href="index.html" class="logo-black-2"><img src="img/logo_sub.png" width="189" height="50" alt="株式会社キャリアデザイン"/></a>
+        <a href="index.html" class="logo-black"><img src="img/logo_sub.png" width="189" height="50" alt="株式会社キャリアデザイン"/></a>
+    </h1>
+    <nav>
+        <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+  <ul class="flexbox">
+    <li><a href="reason.html" class="top-color-black">選ばれる理由</a></li>
+    <li><a href="flow.html" class="top-color-black">ご登録～派遣の流れ</a></li>
+    <li><a href="client.html" class="top-color-black">企業のご担当者様</a></li>
+    <li><a href="faq.html" class="top-color-black">よくある質問</a></li>
+    <li><a href="company.html" class="top-color-black">会社概要</a></li>
+    <li><a href="form.html" class="header-contact-btn">お問い合わせ</a></li>
+  </ul>
+    </nav>
+    </div>
+</header>
+    
+<!-- メインイメージ -->
+<div class="top-heroimage">
+  <p class="top-heroimage-cat"><img src="img/catchcopy.png" width="752" height="245" alt=""/></p>
+</div>
+
+<!------------------------------- メインエリア --------------------------------->
+    
+<!-- メッセージ -->
+<main class="top">
+<section class="top-message">
+    <div class="inner">
+  <p class="top-message-cat"><span class="size-43">就職・転職</span>を<span class="size-43">デザイン</span>する！</p>
+  <div class="text-area">
+  <p>株式会社キャリアデザインは、みなさんの考える就職・転職プランをデザインします！<br>
+    経歴を輝かせたい、夢を叶えたい、たくさんの仕事を経験したい<br>
+    働きたい皆様の要望を叶えるために、私たちは仲介業者ではなく<br>
+  より一層、皆様の力になれる、経歴書のデザイナーになることを考えました。</p>
+  <p>経歴はその人の人生を明るくする。</p>
+  <p>一人ひとりの経歴を責任をもって選びたい、<br>
+    明るい人生のために、私たちにキャリアをデザインさせてください。</p>
+  </div>
+  <p><img src="img/logo_message.png" width="85" height="54" alt="株式会社キャリアデザイン"/></p>
+        </div>
+</section>
+
+<!-- 選ばれる理由 -->
+<section class="top-reason">
+  <div class="inner">
+  <h2 class="headline-a headline-white">キャリアデザインが選ばれる６つの理由</h2>
+    <div class="flexbox">
+  <div class="box">
+    <p class="icon-reason"><img src="img/icon_reason1.png" width="76" height="76" alt="親切で丁寧なスタッフ"/></p>
+    <h3>親切で丁寧なスタッフ</h3>
+    <p>不安や悩みもご相談ください！キャリアデザインのスタッフが求職者の皆様を優しく丁寧にサポートいたします。</p>
+  </div>
+  <div class="box">
+    <p><img src="img/icon_reason2.png" width="76" height="76" alt="スキルが身につく！"/></p>
+    <h3>スキルが身につく！</h3>
+    <p>今のスキルに自信がなくても大丈夫。充実の教育サポートで、未経験でもスキルが身に付きます。</p>
+  </div>
+  <div class="box">
+    <p><img src="img/icon_reason3.png" width="76" height="76" alt="資格取得を支援"/></p>
+    <h3>資格取得を支援</h3>
+    <p>資格取得費用は当社で全額負担！積極的にご活用ください。</p>
+  </div>
+  <div class="box">
+    <p><img src="img/icon_reason4.png" width="76" height="76" alt="充実の福利厚生"/></p>
+    <h3>充実の福利厚生</h3>
+    <p>各種の社会保険制度はもちろん、健康診断や産休・育休制度などもご用意！</p>
+  </div>
+  <div class="box">
+    <p><img src="img/icon_reason5.png" width="76" height="76" alt="高時給案件が多数！"/></p>
+    <h3>高時給案件が多数！</h3>
+    <p>日給が高いお仕事も多数ご依頼いただいております。</p>
+  </div>
+  <div class="box">
+    <p><img src="img/icon_reason6.png" width="76" height="76" alt="ライフスタイルに合わせて働ける"/></p>
+    <h3>ライフスタイルに合わせて働ける</h3>
+    <p>希望に合わせて就業先を柔軟に選べるのも派遣ならでは。あなたにぴったりの働き方がきっとあります！</p>
+  </div>
+    </div>
+    <div class="view-more-btn"><a href="reason.html">view more</a></div>
+  </div>
+</section>
+
+<!-- 求人事例 -->
+<section class="top-job">
+    <div class="inner">
+<h2 class="headline-a">求人事例</h2>
+<div class="flexbox">
+<div class="box">
+  <h3>社内ネットワークの設計・構築・運用</h3>
+  <p>【仕事内容】<br>
+  ゲーム会社での拠点間のネットワーク設計・構築～運用を担当。それに関わる、手順書やドキュメント作成、障害対応、など。</p>
+  <p>【勤務地】ＪＲ山手線 / 浜松町</p>
+  <p>【時給】2400円</p>
+</div>
+<div class="box">
+  <h3>未経験OK！システム会社コールセンタースタッフ募集</h3>
+  <p>【仕事内容】<br>
+  テレマーケティング業務（受信）システム会社での問合せ対応</p>
+  <p>【勤務地】ＪＲ山手線 / 西新宿</p>
+  <p>【時給】1600円</p>
+</div>
+<div class="box">
+  <h3>南越谷駅すぐ！人気の社内SE業務</h3>
+  <p>【仕事内容】<br>
+  大手不動産会社での社内SE業務</p>
+  <p>【勤務地】ＪＲ武蔵野線 / 南越谷</p>
+  <p>【時給】1800円</p>
+</div>
+</div>
+<div class="entry-btn"><a href="form.html">仮登録ページはこちら</a></div>
+    </div>
+</section>
+
+<!-- よくある質問 -->
+<section class="top-faq">
+<div class="inner">
+<h2 class="headline-a headline-white">よくある質問</h2>
+<dl class="faqlist">
+      <div class="box">
+      <dt><span class="icon-q"><img src="img/icon_question.png" width="40" height="40" alt="質問"/></span>派遣に登録をするのに費用は必要ですか？</dt>
+      <dd><span class="icon-a"><img src="img/icon_answer.png" width="40" height="40" alt="回答"/></span>当社の派遣社員として登録していただくにあたって、登録費用は一切必要ありませんので、ご安心ください。 </dd>
+      </div>
+      <div class="box">
+      <dt><span class="icon-q"><img src="img/icon_question.png" width="40" height="40" alt="質問"/></span>未経験でも大丈夫ですか？</dt>
+      <dd><span class="icon-a"><img src="img/icon_answer.png" width="40" height="40" alt="回答"/></span>はい、大丈夫です。当社ではスキルアップ研修制度をご用意しておりますので、未経験の方でも安心してスキルを身に着けご就業していただけます。経験豊富なスタッフも在籍しておりますので、疑問点や不安なことなどをご相談していただける環境も整っております。</dd>
+      </div>
+    </dl>
+<div class="view-more-btn"><a href="faq.html">view more</a></div>
+</div>
+</section>
+    
+<!-- 先輩の声 -->
+<section class="top-voice">
+    <div class="inner">
+<h2 class="headline-a">先輩の声</h2>
+  <div class="box clearfix">
+    <p><img src="img/img_senpai1.png" width="360" height="360" alt="先輩の声"/></p>
+    <div class="voice-text">
+        <h3>未経験だけど希望のお仕事に就けた！</h3>
+        <p>将来のことを考え、専門性のある仕事に転職したいと思っていましたが、未経験で資格無しだと難しいのかなと思っていました。<br>
+            そんな時にキャリアデザインのHPを見て「自分もできるかも！」と思い派遣登録をしました。<br>
+            キャリアデザインのスキルアップ研修を利用し、今では、自分の力だけでは就けないような仕事をさせていただけるようになり、チャレンジしてみてよかったと思います。<br>
+        </p>
+        <p>（20代：元事務職）</p>
+    </div>
+  </div>
+  <div class="box clearfix">
+    <p><img src="img/img_senpai2.png" width="360" height="360" alt="先輩の声"/></p>
+    <div class="voice-text">
+        <h3>切磋琢磨できる仲間とともに資格取得に向けて頑張れます！</h3>
+        <p>アルバイト経験しかなかったので不安でしたが、同じように不安を抱えている仲間がいたので安心しました。</p>
+      <p>研修では仲間と一緒に切磋琢磨できる環境が整っているので、今は資格取得に向けてみんなで頑張っています！</p>
+        <p>（20代：元アルバイト）</p>
+    </div>
+    </div>
+  <div class="box clearfix">
+    <p><img src="img/img_senpai3.png" width="360" height="360" alt="先輩の声"/></p>
+    <div class="voice-text">
+        <h3>仕事も家庭もバランスよく働けて毎日が充実しています！</h3>
+        <p>3人の子供を子育中の私にとって、もう復職は無理かなと思っていましたが、担当の方が私の希望をしっかりと伺ってくれたので、今では仕事と家庭を両立させながら働くことができています。</p>
+        <p>20代で取得した資格も活かしながら働くことができているので本当に満足しています。</p>
+        <p>（30代：主婦）</p>
+    </div>
+    </div>
+        </div>
+</section>
+
+<!-- ニュース -->
+<section class="top-news">
+<div class="inner">
+<h2 class="headline-a">ニュース</h2>
+  <div class="box">
+    <dl>
+        <a href="#">
+        <dt>2020/06/17</dt>
+        <dd class="clearfix"><span class="text-area">弊社Webサイトをリニューアルしました</span><span class="news-icon">▶</span></dd>
+        </a>
+        <a href="#">
+        <dt>2020/03/15</dt>
+        <dd class="clearfix"><span class="text-area">【重要】新型コロナウイルス対策について</span><span class="news-icon">▶</span></dd>
+        </a>
+        <a href="#">
+        <dt>2019/12/12</dt>
+        <dd class="clearfix"><span class="text-area">スキルアップ講習実施について</span><span class="news-icon">▶</span></dd>
+        </a>
+    </dl>
+    </div>
+</div>
+</section>
+     </main>
+    <p class="gotop"><a href="#all"><img src="img/btn_gotop.png" width="70" height="70" alt="ページトップへ"/></a></p>
+
+<!------------------------------- フッターエリア --------------------------------->
+<footer>
+    
+<!-- コンタクト -->
+
+<div class="footer-contact">
+    <div class="inner">
+    <h2 class="headline-a">お問い合わせ</h2>
+    <p class="logo-footer"><img src="img/copy_contact.png" width="953" height="107" alt="さあ、あなたのキャリアをデザインしよう"/></p>
+    <div class="flexbox">
+    <div class="box">
+    <p class="contact-ttl">Webでお問い合わせ</p>
+    <p class="footer-contact-btn">
+        <a href="form.html">仮登録・お問い合わせフォームはこちら</a>
+    </p>
+    <p class="footer-contact-btn-tb">
+        <a href="form.html">お問い合わせフォームへ</a>
+    </p>
+    </div>
+    <div class="box">
+    <p class="contact-ttl">電話でお問い合わせ</p>
+    <p class="contact-tel">TEL 03-5927-9092</p>
+    <p>営業時間　平日 10:00~20:00</p>
+    </div>
+    </div>
+    </div>
+</div>
+
+<!-- フッターメイン -->
+<div class="footer-main-area">
+    <div class="inner clearfix flexbox">
+    <div class="footer-logo-area">
+    <p><a href="index.html"><img src="img/logo_fotter.png" width="172" height="100" alt="株式会社キャリアデザイン"/></a></p>
+    <ul class="clearfix">
+        <li><a href="#"><img src="img/icon_twitter.png" width="45" height="45" alt="ツイッター"/></a></li>
+        <li><a href="#"><img src="img/icon_facebook.png" width="45" height="45" alt="フェイスブック"/></a></li>
+        <li><a href="#"><img src="img/icon_instagram.png" width="45" height="45" alt="インスタグラム"/></a></li>
+    </ul>
+    <p class="footer-tel">TEL 03-5927-9092</p>
+    <p class="footer-hours">営業時間　平日 10:00~20:00</p>
+    </div>
+    <div class="footer-link-area footer-nav-area">
+    <ul>
+    <li><a href="reason.html">選ばれる理由</a></li>
+    <li><a href="flow.html">ご登録～派遣の流れ</a></li>
+    <li><a href="client.html">企業のご担当者様</a></li>
+    <li><a href="faq.html">よくある質問</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="form.html">お問い合わせ</a></li>
+  </ul>
+        </div>
+        <div class="footer-link-area">
+    <ul>
+    <li><a href="recruit.html">採用情報</a></li>
+    <li><a href="privacy.html">プライバシーポリシー</a></li>
+    <li><a href="law_info.html">労働者派遣法に基づく情報提供について</a></li>
+    <li><a href="disclaimer.html">免責事項・推奨環境</a></li>
+  </ul>
+      </div>
+  </div>
+    <p class="copyright">copyright (c) 2019 careerdesign Co.,Ltd. all rights reserved. Powered by ShintTowa.Investment Co.,Ltd.</p>
+</div>
+</footer>
+    </div>
+    
+</body>
+</html>

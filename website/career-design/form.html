@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社キャリアデザイン|登録から就業までの流れ</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="img/favicon.ico">
+<link rel="icon" type="img/vnd.microsoft.icon" href="img/favicon.ico">
+<link rel="shortcut icon" href="img/favicon.ico">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+$(function(){
+  //#nav-toggleをクリックした時の設定
+  $(".nav-toggle").on("click",function(){
+    
+    //ナビゲーションを開閉
+    $("nav ul").slideToggle();
+    
+    //#nav-toggleにクラス名[open]を追加・削除
+    $(this).toggleClass("open");
+  });
+});
+</script>
+    <script>
+   //100pxスクロールしたら.gotopを表示
+$(window).on("scroll", function() {
+	if ($(this).scrollTop() > 100) {
+		$(".gotop").fadeIn(1000);
+	} else {
+		$(".gotop").fadeOut();
+	}
+});
+</script>
+</head>
+
+<body>
+<div id="all">
+    
+<!----------------------- ヘッダー＆メインイメージエリア ------------------------->
+
+<header class="sub-backcolor-white">
+    <div class="header-inner">
+    <div class="flexbox-a">
+    <h1><a href="index.html"><img src="img/logo_sub.png" width="189" height="50"  alt="株式会社キャリアデザイン"/></a>
+    </h1>
+ <nav>
+   <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+  <ul class="flexbox">
+    <li><a href="reason.html" class="sub-color-black">選ばれる理由</a></li>
+    <li><a href="flow.html" class="sub-color-black">ご登録～派遣の流れ</a></li>
+    <li><a href="client.html" class="sub-color-black">企業のご担当者様</a></li>
+    <li><a href="faq.html" class="sub-color-black">よくある質問</a></li>
+    <li><a href="company.html" class="sub-color-black">会社概要</a></li>
+    <li><a href="form.html" class="header-contact-btn blowsing">お問い合わせ</a></li>
+  </ul>
+    </nav>
+    </div>
+    </div>
+</header>
+    
+<!-- メインイメージ -->
+<div class="sub-mainimage sub-mainimage-form">
+  <div class="sub-title">
+  <h2>お問い合わせ</h2>
+    <p>Contact</p>
+</div>
+  </div>
+  
+<!------------------------------- サブページ　エリア --------------------------------->
+  <main class="subpage">  
+<!--- パンくずリスト --->
+<ol class="topic1 inner">
+<li><a href="index.html">ホーム</a></li>
+<li>お問い合わせ</li>
+</ol>
+    
+<!--- ここからサブページのメインコンテンツ --->
+<div class="contact">
+    <div class="inner">
+ <h2 class="headline-a">仮登録・お問い合わせフォーム</h2>
+  <p>※の項目は入力必須項目です</p>
+  <form id="form1" name="form1" method="post">
+   <table border="0">
+    <tbody>
+     <tr>
+      <th scope="row">ご用件 ※</th>
+      <td><p>
+       <label>
+        <input type="radio" name="RadioGroup1" value="ラジオ" id="RadioGroup1_0">
+        仮登録</label>
+       <label class="block">
+         <input type="radio" name="RadioGroup1" value="ラジオ" id="RadioGroup1_1">
+        お問い合わせ（個人の方）</label>
+       <label class="block">
+        <input type="radio" name="RadioGroup1" value="ラジオ" id="RadioGroup1_2">
+        お問い合わせ（企業の方）</label>
+      </p></td>
+      </tr>
+     <tr>
+      <th scope="row">お名前 ※</th>
+      <td><input name="textfield" type="text" required="required" id="textfield" placeholder="例）山田　花子" title="漢字で氏名を入力" size="60" maxlength="60"></td>
+      </tr>
+     <tr>
+      <th scope="row">フリガナ ※</th>
+      <td><input name="textfield2" type="text" required="required" id="textfield2" placeholder="例）ヤマダ　ハナコ" title="全角カナ" size="60" maxlength="60"></td>
+      </tr>
+     <tr>
+      <th scope="row">会社名（企業の方）</th>
+      <td><input name="textfield3" type="text" id="textfield3" placeholder="株式会社キャリアデザイン" size="60" maxlength="60"></td>
+      </tr>
+     <tr>
+      <th scope="row">ご住所 ※</th>
+      <td><input name="textfield4" type="text" required="required" id="textfield4" placeholder="東京都豊島区東池袋３－１１－９　ヨシフジビル７Ｆ 	 	 	 	 	 	 	 	 	 	 	 " size="60" maxlength="80"></td>
+      </tr>
+     <tr>
+      <th scope="row">電話番号 ※</th>
+      <td><input name="tel" type="tel" required="required" id="tel" placeholder="012-345-6789" size="60" maxlength="20"></td>
+      </tr>
+     <tr>
+      <th scope="row">メールアドレス ※</th>
+      <td><input name="email" type="email" required="required" id="email" placeholder="info@careerdesign-i.site" size="60" maxlength="60"></td>
+      </tr>
+     <tr>
+      <th scope="row">お問い合わせ内容</th>
+      <td><textarea name="textarea" cols="60" rows="10" id="textarea" placeholder="お問い合わせの内容をご記入下さい"></textarea></td>
+      </tr>
+     <tr>
+      <th colspan="2" class="text" scope="row">- 仮登録をご希望の方は以下も合わせてご記入ください -</th>
+      </tr>
+     <tr>
+      <th scope="row">自宅最寄り駅</th>
+      <td><input name="textfield5" type="text" id="textfield5" placeholder="池袋" size="30" maxlength="30">
+       駅</td>
+      </tr>
+     <tr>
+      <th scope="row">性別</th>
+      <td><p>
+       <label>
+        <input type="radio" name="RadioGroup2" value="ラジオ" id="RadioGroup2_0">
+        男性　</label>
+       <label>
+        <input type="radio" name="RadioGroup2" value="ラジオ" id="RadioGroup2_1">
+        女性</label>
+       <br>
+      </p></td>
+      </tr>
+     <tr>
+      <th scope="row">年齢</th>
+      <td>満
+       <input name="textfield6" type="text" id="textfield6" placeholder="30" size="20" maxlength="5">
+       歳</td>
+      </tr>
+     <tr>
+      <th scope="row">希望職種</th>
+      <td><p>
+       <label>
+        <input type="radio" name="RadioGroup3" value="ラジオ" id="RadioGroup3_0">
+        コールセンター</label>
+       　       <label>
+        <input type="radio" name="RadioGroup3" value="ラジオ" id="RadioGroup3_1">
+        SE</label>
+       <label>
+        　
+         <input type="radio" name="RadioGroup3" value="ラジオ" id="RadioGroup3_2">
+        その他</label>
+       　
+       <label>
+        <input type="radio" name="RadioGroup3" value="ラジオ" id="RadioGroup3_3">
+        未定</label>
+      </p></td>
+      </tr>
+     <tr>
+      <th scope="row">勤務開始希望日</th>
+      <td><input name="date" type="date" id="date" max="2030-12-31" min="2020-06-15" value="2012-01-01"></td>
+      </tr>
+     <tr>
+      <th scope="row">ご希望の連絡方法</th>
+      <td><p>
+       <label>
+        <input type="radio" name="RadioGroup4" value="ラジオ" id="RadioGroup4_0">
+        電話</label>
+       　
+       <label>
+        <input type="radio" name="RadioGroup4" value="ラジオ" id="RadioGroup4_1">
+        メール</label>
+      </p></td>
+      </tr>
+     <tr>
+      <th colspan="2" class="submit" scope="row"><input type="submit" name="submit" id="submit" value="送信する"></th>
+      </tr>
+     </tbody>
+    </table>
+  </form>
+ </div>
+</div>  
+ </main>
+  <p class="gotop"><a href="#all"><img src="img/btn_gotop.png" width="70" height="70" alt="ページトップへ"/></a></p>
+    
+<!------------------------------- フッターエリア --------------------------------->
+<footer>
+    
+<!-- コンタクト -->
+
+<div class="footer-contact">
+    <div class="inner">
+    <h2 class="headline-a">お問い合わせ</h2>
+    <p class="logo-footer"><img src="img/copy_contact.png" width="953" height="107" alt="さあ、あなたのキャリアをデザインしよう"/></p>
+    <div class="flexbox">
+    <div class="box">
+    <p class="contact-ttl">Webでお問い合わせ</p>
+    <p class="footer-contact-btn">
+        <a href="form.html">仮登録・お問い合わせフォームはこちら</a>
+    </p>
+    <p class="footer-contact-btn-tb">
+        <a href="form.html">お問い合わせフォームへ</a>
+    </p>
+    </div>
+    <div class="box">
+    <p class="contact-ttl">電話でお問い合わせ</p>
+    <p class="contact-tel">TEL 03-5927-9092</p>
+    <p>営業時間　平日 10:00~20:00</p>
+    </div>
+    </div>
+    </div>
+</div>
+
+<!-- フッターメイン -->
+<div class="footer-main-area">
+    <div class="inner clearfix flexbox">
+    <div class="footer-logo-area">
+    <p><a href="index.html"><img src="img/logo_fotter.png" width="172" height="100" alt="株式会社キャリアデザイン"/></a></p>
+    <ul class="clearfix">
+        <li><img src="img/icon_twitter.png" width="45" height="45" alt="ツイッター"/></li>
+        <li><img src="img/icon_facebook.png" width="45" height="45" alt="フェイスブック"/></li>
+        <li><img src="img/icon_instagram.png" width="45" height="45" alt="インスタグラム"/></li>
+    </ul>
+    <p class="footer-tel">TEL 03-5927-9092</p>
+    <p class="footer-hours">営業時間　平日 10:00~20:00</p>
+    </div>
+    <div class="footer-link-area footer-nav-area">
+    <ul>
+    <li><a href="reason.html">選ばれる理由</a></li>
+    <li><a href="flow.html">ご登録～派遣の流れ</a></li>
+    <li><a href="client.html">企業のご担当者様</a></li>
+    <li><a href="faq.html">よくある質問</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="form.html">お問い合わせ</a></li>
+  </ul>
+        </div>
+        <div class="footer-link-area">
+    <ul>
+    <li><a href="recruit.html">採用情報</a></li>
+    <li><a href="privacy.html">プライバシーポリシー</a></li>
+    <li><a href="law_info.html">労働者派遣法に基づく情報提供について</a></li>
+    <li><a href="disclaimer.html">免責事項・推奨環境</a></li>
+  </ul>
+      </div>
+  </div>
+    <p class="copyright">copyright (c) 2019 careerdesign Co.,Ltd. all rights reserved. Powered by ShintTowa.Investment Co.,Ltd.</p>
+</div>
+</footer>
+    </div>
+    
+</body>
+</html>

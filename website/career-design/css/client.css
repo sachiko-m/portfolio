@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*------------------------------
+    【企業の方】メインエリア
+--------------------------------*/
+/*　強み　*/
+
+.sub-strength .flexbox{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.sub-strength .box{
+  background-color: #F9F9F9;
+  text-align: center;
+  width: 370px;
+  margin: 10px;
+  padding: 30px;
+}
+.sub-strength h3{
+  margin: 18px 0px;
+  position:  relative;
+}
+.sub-strength h3:after{
+  content:  '';       
+    width: 30px;           
+    height: 4px;           
+    background-color: #65CD6A;
+    display:  block;        
+    position:  absolute;    
+    left:  50%;               
+    bottom: -8px;
+    transform: translate(-50%)
+}
+
+/*　求人掲載までの流れ　*/
+.sub-flow{
+  background-color: #FBFBFB;
+  padding: 50px 0px;
+}
+.sub-flow h3 sapn {
+  color: #65CD6A;
+}
+.sub-flow h3 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.sub-flow .line {
+  display: flex;
+  border-left: 2px solid #65CD5A;
+  padding: 30px 30px 30px 30px;
+  margin: 30px 0px 30px 30px;
+  
+}
+.sub-flow .text{
+    padding-left: 35px;
+}
+
+
+/*　よくある質問　*/
+.sub-faqlist{
+  padding: 50px 0px;
+}
+.sub-faqlist .box{
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #F1F1F1;
+}
+.sub-faqlist dt{
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CBCBCB;
+    color: #65CD6A;
+}
+.sub-faqlist .box dt{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
