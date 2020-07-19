@@ -1,0 +1,808 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MIURA BAKERY</title>
+<link href="bakery.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    
+    /* 打消し */
+    #all {
+        line-height: 1.8;
+        width: 100%;
+        color: #393939;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    }
+    p, h1, h2, h3, ul, ol, dl, dd, dt, body, img{  
+        color: #403a39;
+        padding: 0px;
+        margin: 0px;
+    }
+    img{
+        vertical-align: middle;
+        border-style: none;
+    }
+    
+    
+    /*―――――――――――――――――――――――――――――――――――――――
+    　　ヘッダー・ナビゲーション・メイン画像エリア
+    ―――――――――――――――――――――――――――――――――――――――*/
+    /* ヘッダー */
+    header{
+  background-color: #343B29;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+    }
+    header h1{
+        text-align: center;
+    }
+    
+    /* ナビゲーション */
+    nav{
+  background-color: #E6D29D;
+  border: 2px solid #322417;
+  width: 1076px;
+  padding: 10px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  overflow: hidden;
+    }
+    nav ul{
+        width: 1008px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    nav li{
+        border-right: 2px solid #322417;
+        list-style-type: none;
+        float: left;
+    }
+    nav li.last{
+        border: none;
+        }
+    nav li a{
+        color: #322417;
+        width: 200px;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+    }
+    nav li a:hover{
+        color: #be8f68;
+    }
+    .browsing{
+        color: #be8f68;
+    }
+    
+    /* メインイメージ　*/
+    .mainimage{
+  width: 1080px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+    }
+    
+    .line{
+        padding-top: 25px;
+        border-bottom:  5px dotted #7D3D3B;
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+   /* パンくずリスト */
+    .topic{
+        width: 1080px;
+        margin: 0 auto;
+        padding-top: 25px;
+        list-style-type: none;
+    }
+    .topic li{
+        display: inline;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+    .topic li+li:before {
+        content: "｜ ";
+    }
+    .topic li a{
+        color: #DCAF59;
+    }
+    .topic li a:hover{
+        color: #e6d29d;
+    }
+    
+    
+    /*――――――――――――――――
+    　　メインエリア
+    ―――――――――――――――――*/
+    
+    /* 共通部分 */
+    .outer{
+        width: 1080px;
+        margin: 25px auto 80px auto;
+        overflow: hidden;
+    }
+    main{
+        width: 750px;
+        float: left;
+    }
+    .top h2{
+        background-color: #343B29;
+        color: #fff;
+        padding: 2px 0px 2px 10px;
+        margin: 0px -15px 30px;
+    }
+    .top h2.first{
+        margin-top: 0px;
+    }
+    .top h2 span{
+        font-size: 0.5em;
+    }
+    .top h3{
+        border-bottom: 1px solid #322417;
+    }
+    .top .about,.top .new,.top .menu{
+        background-color: #f7f4f4;
+        margin-bottom: 50px;
+        padding: 0px 15px;
+        overflow: hidden;
+    }
+    
+    /* ABOUT */
+    .about .box-1,.box-2{
+        overflow: hidden;
+        margin: 40px 0px;
+    }
+    .about .box-1{
+        margin-bottom: 30px;
+    }
+    .about .box-1 img{
+        float: left;
+        padding: 0px 10px 0px 0px;
+    }
+    .about .box-2 img{
+        float: right;
+        padding: 0px 0px 0px 10px;
+    }
+    .about .img02{
+            display: none;
+        } 
+    
+    /* NEW */
+    .new dl{
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
+    .new dt{
+        float: left;
+        font-weight: bold;
+    }
+    .new dd{
+        border-bottom: 1px dotted #403a39;
+        padding-left: 10em;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        
+    }
+    
+    
+    /* MENU */
+    .bread,.drink{
+        overflow: hidden;
+        margin-bottom: 0px auto 40px;
+    }
+    .menu .box{
+        margin: 30px 10px 10px;
+        text-align: center;
+        float: left;
+    }
+    .menu .bread .img{
+    width: 200px;
+    position: relative
+    }
+    .menu .box .label{
+        border-radius: 0px;
+        position: absolute;
+        top:-3px;
+        left: 3px;
+    }
+    .menu img{
+        border-radius: 5px;
+    }
+    .menu .img{
+        margin: 0 auto;
+    }
+
+    /*――――――――――――――――
+    　　SubPage エリア
+    ―――――――――――――――――*/
+    .subpage{
+        width: 1080px;
+        overflow: hidden;
+    }
+   .subpage .inner{
+    overflow: hidden;
+    width: 880px;
+    margin: 0 auto;
+}
+    .subpage-img{
+        width: 1080px;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+    }
+    .subpage-img h2{
+        color: #fff;
+        font-size: 33px;
+        letter-spacing: 0.3em;
+        text-shadow: 1px 2px 3px #535353;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .subpage-img h2 span{
+        display: block;
+        font-size: 15px;
+        transform: translateY(-40%);
+    }
+    .subpage .menu{
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .subpage .bread,.subpage .drink,.subpage .commitment,.subpage .shopspace,.subpage .shopinfo, .subpage .qa{
+        background-color: #f7f4f4;
+        padding: 30px 15px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    .subpage h3{   
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .subpage span{
+        display: block;
+        width: 50px;
+        border-bottom:  3px solid #DCAF59;
+        margin: 10px auto;
+    }
+    /* ABUT */
+    .subpage .about{
+        text-align: center;
+        overflow: hidden;    
+    }
+    .subpage .about h4{
+        font-size: 1.2em;
+    }
+    .subpage .about .commitment img{
+        float: left;
+        margin: 25px;
+    }
+    .subpage .about .commitment,.subpage .about .shopspace{
+        overflow: hidden;
+        
+    }
+    .subpage .about .shopspace img{
+        float: left;
+        margin: 25px 5px 25px 45px;
+    }
+    .subpage .about .shopspace .text{
+        float: right;
+        text-align: left;
+        width: 470px;
+        margin: 25px 45px 25px 5px;
+    }
+    .subpage .about .commitment .text{
+        clear: both;
+        padding-top: 30px;
+    }
+    .subpage .shopinfo h3{
+        text-align: left;
+    }
+    .subpage .shopinfo{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .subpage .shopinfo .map{
+        margin-top: 30px;
+    }
+
+    /* Q&A */
+    .qa dt{
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .qa dd{
+        margin-bottom: 30px;
+    }
+    /*――――――――――――――――
+    　　サイドエリア
+    ―――――――――――――――――*/
+    .side{
+        width: 300px;
+        float: right;
+    }
+    .side .shopinfo,.access{
+        background-color: #ede4cd;
+        width: 276px;
+        border: 2px solid #CECDCB;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .side h2{
+        font-size: 1.2em;
+        border-bottom: 1px dotted #403a39;
+        margin-bottom: 8px;
+    }
+    .side h3{
+        font-size: 1em;
+    }
+    .side span{
+        font-size: 0.7em;
+    }
+    .side p{
+        font-size: 0.9em;
+    }
+    .side .access img{
+        width:276px;
+        height: auto;
+    }
+    
+    
+    /*――――――――――――――――
+    　　TOPへボタン
+    ―――――――――――――――――*/
+    .btn-top{
+        text-align: right;
+        width: 1080px;
+        margin: 0px auto -30px auto;
+    }
+    
+    /*――――――――――――――――
+    　　フッターエリア
+    ―――――――――――――――――*/
+    footer{
+        background-color: #322417;
+        text-align: center;
+        padding: 40px 0px;
+    }
+    footer p,a{
+        color: #fff;
+        text-decoration: none;
+    }
+    footer a:hover{
+        color: #E6D29D;
+    }
+    
+    
+    
+    /*――――――――――――――――――――
+    　　レスポンシブル設定
+    ―――――――――――――――――――――*/
+    /* 1080px以下 */
+    @media screen and (max-width: 1080px){
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        nav{
+            width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        nav ul{
+            width: 100%;
+        }
+        nav li{
+            width: 19.5%;
+        }
+        nav li a{
+            display: inline;
+        }
+        .mainimage,.subpage-img,.subpage,.outer{
+            width: 96vw;
+            height: auto;
+        }
+        .topic{
+            width: 96%;
+        }
+        .line{
+        width: 96%;
+        }
+        .subpage .bread,.subpage.drink{
+            width: calc(100% - 30px);
+            margin: 0 auto;
+        }
+        .top .bread,.top .drink{
+            width: calc(100% - 30px);
+            margin: 0 auto;
+        }
+        .menu{
+            width: calc(100% - 30px);
+            margin: 0 auto;
+        }
+        
+        main{
+            width: auto;
+            float: none;
+        }
+        .menu .box{
+            width: 30%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+        }
+        .menu .box .img{
+            width: auto;
+        }
+        .top .menu .box .label{
+            left: 15%;
+        }
+        .subpage .inner{
+            width: 80%;
+        }
+        
+        .btn-top{
+            width: 80vw
+        }
+        .side{
+            width: auto;
+            float: none;
+            overflow: hidden;
+            margin-top: 50px;
+            background-color: #ede4cd;
+            border: 2px solid #CECDCB;
+            padding: 15px;
+        }
+        .side .shopinfo{
+            float: left;
+            width: calc(50% - 34px);
+            border: none;
+            margin-bottom: 0px;
+        }
+        .side .access{
+            float: right;
+            width: calc(50% - 34px);
+            border: none;
+            margin-bottom: 0px;
+        }
+        .subpage .about .commitment img{
+            width: calc(33% - 50px);
+        }
+        .subpage .about .shopspace img,.subpage .about .shopspace .text{
+            width: calc(50% - 50px);
+        }
+        .subpage .shopinfo{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    
+    /* 960px以下 */
+    @media screen and (max-width: 960px){
+        .menu .box{
+            width: 30%;
+            margin-left: 1.6%;
+            margin-right: 1.6%;
+        }
+        .top .menu .box .label{
+            left: 5%;
+        }
+    }
+    
+    /* 768px以下 */
+    @media screen and (max-width: 768px){
+        nav li{
+            width: 90%;
+            float: none;
+            border-right: none;
+            border-bottom: 1px dotted #f7f4f4;
+            margin: 10px auto;
+        }
+        nav li a{
+            width: 90%;
+            border: none;
+            display: block;
+            margin: 0px auto;
+        }
+        .about .box-1 .img01,.about .box-2 .img01{
+            display: none;
+        } 
+        .respoms{
+            width: calc(80vw + 40px);
+            overflow: hidden;
+            margin: auto;
+        }
+        .about .img02{
+            display: inline;
+            float: left;
+            margin: 0px 10px 50px 10px;
+            width: 40vw;
+        } 
+        .menu .box{
+            width: 47%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+        }
+        .top .menu .box .label{
+            left: 15%;
+        }
+        .subpage-img h2{
+            font-size: 1.2em;
+        }
+        .side .shopinfo  ,.side .access{
+            float: none;
+            width: auto;
+        }
+        .side .access img{
+            width: 100%;
+        }
+        .side p {
+            font-size: 1.2em;
+        }
+        header {
+            position: relative;
+        }
+        nav {
+            display: none;
+        }
+        #nav-toggle {
+            width: 30px;
+            height: 26px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+        #nav-toggle span {
+            width: 100%;
+            height: 4px;
+            display: block;
+            position: absolute;
+            left: 0px;
+            background-color: #FFFFFF;
+        }
+        #nav-toggle span:nth-child(1) {
+            top: 0px;
+        }
+        #nav-toggle span:nth-child(2) {
+            top: 11px;
+        }
+        #nav-toggle span:nth-child(3) {
+            top: 22px;
+        }
+    }
+    
+    /* 769px以上 */
+    @media screen and (min-width: 769px){
+        nav{
+            display: block !important;
+        }
+    }
+    
+    /* 600px以下 */
+    @media screen and (max-width: 600px){
+        .new dt{
+            float: none;
+        }
+        .new dd{
+        padding-left: 1em;
+        }
+        .top .menu .box .label{
+            left: 8%;
+        }
+        .top .menu .box{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .subpage .about .commitment img{
+            margin: 2%;
+            width: 29.3%;
+        }
+        .subpage .about .shopspace img,.subpage .about .shopspace .text{
+            float: none;
+            width: 96%;
+            margin: 2%;
+        }
+    }
+    
+    /* 500px以下 */
+    @media screen and (max-width: 500px){
+        .subpage-img h2{
+            font-size: 1em;
+        }
+        .menu .box{
+                float: none;
+                width: 100%;
+        }
+        .top .menu .box .label{
+            left: 25%;
+        }
+        .subpage .menu .box .label{
+            left: 20%;
+        }
+    }
+    /* 440px以下 */
+    @media screen and (max-width: 440px){
+        .top .menu .box .label{
+            left: 15%;
+        }
+        .subpage .menu .box .label{
+            left: 10%;
+        }
+    }
+    
+    
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script>
+  $(function(){
+    $("#nav-toggle").on("click",function(){
+      $("nav").slideToggle();
+      $(this).toggleClass("open");
+    });
+  });
+</script>
+</head>
+
+<body>
+    <div id="all">
+    <header>
+        <h1><a href="bakery.html"><img src="img/logo.png" width="200" height="53" alt="ミウラベーカリー"/></a></h1>
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="#all">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#shopinfo">SHOP INFO</a></li>
+            <li class="last"><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <p class="mainimage">
+        <img src="img/mainimage.jpg" width="1080" height="420">
+    </p>
+    <div class="line"></div>
+    <div class="outer">
+    <main class="top">
+        <section class="about">
+            <h2 class="first">ABOUT <span>-当店について-</span></h2>
+                <div class="box-1">
+                    <p class="img01"><img src="img/about-img01.jpg" width="250" alt="ミウラベーカリーのパン"></p>
+                    <h3>当店は無添加素材にこだわったベーカリーです</h3>
+                    <p>当店では無添加の素材を使用し、安心安全な材料で、熟練したパン職人が手づくりで仕上げています。おいしさと、楽しさと、健康のためにこだわりを尽くしたパンで幸せな毎日をお届けします。</p>
+                </div>
+                <div class="box-2">
+                    <p class="img01"><img src="img/about-img02.jpg" width="250" alt="イートインスペース"></p>
+                    <h3>店内でもお召し上がりいただけます</h3>
+                    <p>店内にはイートインスペースもございます。<br>
+                    ドリンクメニューもございますので、ゆっくりと焼き立てのパンをお楽しみいただけます。</p>
+                </div>
+            <div class="respoms">
+            <img src="img/about-img01.jpg" class="img02" alt="当店は無添加素材にこだわったベーカリーです">
+            <img src="img/about-img02.jpg" class="img02" alt="イートインスペース">
+            </div>
+        </section>
+        <section class="new">
+            <h2>NEW <span>-新着情報-</span></h2>
+            <dl>
+                <dt>2020年4月×日</dt>
+                <dd>新型コロナウイルスの影響を鑑みまして営業時間を16:00までとさせていただきます。</dd>
+                <dt>2020年4月×日</dt>
+                <dd>春の新商品「あまおうイチゴのデニッシュ」を追加しました！<br>詳しくはMENUページをご覧ください。</dd>
+                <dt>2020年4月×日</dt>
+                <dd>テキストテキストテキストテキスト</dd>
+                <dt>2020年4月×日</dt>
+                <dd>テキストテキストテキストテキストテキスト</dd>
+            </dl>
+        </section>
+        <section class="menu">
+            <h2>MENU <span>-メニュー-</span></h2>
+            <div class="bread">
+            <h3>パン</h3>
+                <div class="box">
+                    <p class="label"><img src="img/label01.png" alt="人気ナンバーワン"></p>
+                    <p><img src="img/img01.jpg" width="200" height="120" alt="クロワッサン180円"></p>
+                    <p>クロワッサン<br>180円</p>
+                </div>
+                <div class="box">
+                    <p class="label"><img src="img/label02.png" alt="人気ナンバーツー"></p>
+                    <p><img src="img/img01.jpg" width="200" height="120" alt="リンゴのパン280円"></p>
+                    <p>リンゴのパン<br>280円</p>
+                </div>
+                <div class="box">
+                    <p class="label"><img src="img/label03.png" alt="人気ナンバースリー"></p>
+                    <p><img src="img/img01.jpg" width="200" height="120" alt="シナモンロール230円"></p>
+                    <p>シナモンロール<br>230円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" width="200" height="120" alt=""></p>
+                    <p>クロワッサン<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" width="200" height="120" alt=""></p>
+                    <p>イチゴのデニッシュ<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" width="200" height="120" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" width="200" height="120" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" width="200" height="120" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                </div>
+            <div class="drink">
+            <h3>ドリンク</h3>
+                <div class="box">
+                    <p><img src="img/img01.jpg" alt=""></p>
+                    <p>タピオカミルクティー<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/img01.jpg" alt=""></p>
+                    <p>〇〇〇<br>180円</p>
+                </div>
+            </div>
+        </section>
+        </main>
+        <div class="side">
+            <section class="shopinfo">
+                <h2>SHOP INFO <span>-店舗情報-</span></h2>
+                <h3>MIURA BAKERY</h3>
+                <p>〒123-4567<br>
+                〇〇県〇〇〇市〇〇〇〇〇　1-2-3<br>
+                TEL 123-4567-8910<br>
+                MAIL miurabakery.com<br>
+                営業時間 / 9:00~18:00<br>
+                定休日 / 月・火</p>
+            </section>
+            <section class="access">
+                <h2>ACCESS <span>-アクセス-</span></h2>
+                <p>〇〇駅より徒歩5分</p>
+                <p><img src="img/img01.jpg" width="276px"></p>
+            </section>
+        </div>
+        </div>
+        <p class="btn-top"><a href="#all"><img src="img/btn-top.png"></a></p>
+        <footer>
+            <p><a href="#">HOME</a>｜<a href="#">ABOUT</a>｜<a href="#">MENU</a>｜<a href="#">SHOP INFO</a>｜<a href="#">CONTACT</a></p>
+            <p>Copyright（C) 職業訓練授業課題.All Rights Reserved.</p>
+        </footer>
+        </div>
+</body>
+</html>

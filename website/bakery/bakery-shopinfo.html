@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MIURA BAKERY</title>
+<link href="bakery.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+  $(function(){
+    $("#nav-toggle").on("click",function(){
+      $("nav").slideToggle();
+      $(this).toggleClass("open");
+    });
+  });
+</script>   
+
+</head>
+
+<body>
+    <div id="all">
+    <header>
+        <h1><a href="bakery.html"><img src="img/logo.png" width="200" height="53" alt="ミウラベーカリー"/></a></h1>
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="bakery.html">HOME</a></li>
+            <li><a href="bakery-about.html">ABOUT</a></li>
+            <li><a href="bakery-menu.html">MENU</a></li>
+            <li><a href="bakery-shopinfo.html" class="browsing">SHOP INFO</a></li>
+            <li class="last"><a href="bakery-qa.html">Q&amp;A</a></li>
+        </ul>
+    </nav>
+    <div class="subpage-img">
+        <img src="img/subpage-img02.jpg" width="1080" height="200">
+        <h2>SHOP INFO<br><span>-店舗案内-</span></h2>
+    </div>
+    <ol class="topic">
+        <li><a href="bakery.html">HOME</a></li>
+        <li>SHOP INFO</li>
+    </ol>
+    <div class="line"></div>
+    <div class="outer">
+    <main class="subpage">
+        <section class="shopinfo">
+                <h3>MIURA BAKERY</h3>
+                <p>〒123-4567<br>
+                〇〇県〇〇〇市〇〇〇〇〇　1-2-3<br>
+                TEL 123-4567-8910<br>
+                MAIL miurabakery.com<br>
+                営業時間 / 9:00~18:00<br>
+                定休日 / 月・火</p>
+                <p>〇〇駅より徒歩5分</p>
+                <p class="map"><img src="img/map.png" width="940px"></p>
+        </section>
+        </main>
+        </div>
+        <p class="btn-top"><a href="#all"><img src="img/btn-top.png"></a></p>
+        <footer>
+            <p><a href="bakery.html">HOME</a>｜<a href="bakery-about.html">ABOUT</a>｜<a href="bakery-menu.html">MENU</a>｜<a href="bakery-shopinfo.html">SHOP INFO</a>｜<a href="bakery-qa.html">Q&amp;A</a></p>
+            <p>Copyright（C) 職業訓練授業課題.All Rights Reserved.</p>
+        </footer>
+        </div>
+</body>
+</html>

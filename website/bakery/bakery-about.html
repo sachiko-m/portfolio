@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MIURA BAKERY</title>
+<link href="bakery.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+  $(function(){
+    $("#nav-toggle").on("click",function(){
+      $("nav").slideToggle();
+      $(this).toggleClass("open");
+    });
+  });
+</script>   
+
+</head>
+
+<body>
+    <div id="all">
+    <header>
+        <h1><a href="bakery.html"><img src="img/logo.png" width="200" height="53" alt="ミウラベーカリー"/></a></h1>
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="bakery.html">HOME</a></li>
+            <li><a href="bakery-about.html" class="browsing">ABOUT</a></li>
+            <li><a href="bakery-menu.html">MENU</a></li>
+            <li><a href="bakery-shopinfo.html">SHOP INFO</a></li>
+            <li class="last"><a href="bakery-qa.html">Q&amp;A</a></li>
+        </ul>
+    </nav>
+    <div class="subpage-img">
+        <img src="img/subpage-img02.jpg" width="1080" height="200">
+        <h2>ABOUT<br><span>-当店について-</span></h2>
+    </div>
+    <ol class="topic">
+        <li><a href="bakery.html">HOME</a></li>
+        <li>ABOUT</li>
+    </ol>
+    <div class="line"></div>
+    <div class="outer">
+    <main class="subpage">
+        <section class="about">
+            <div class="commitment">
+                <h3>こだわり<br><span></span></h3>
+                    <h4>当店は無添加素材にこだわったベーカリーです</h4>
+                    <p class="img-butter"><img src="img/about/about01.png" width="300px" alt="国産小麦"></p>
+                    <p><img src="img/about/about02.png" width="300px" alt="店内で手作り"></p>
+                    <p><img src="img/about/about03.png" width="300px" alt="できたて"></p>
+                    <p class="text">当店では無添加の素材を使用し、安心安全な材料で、熟練したパン職人が手づくりで仕上げています。<br>おいしさと、楽しさと、健康のためにこだわりを尽くしたパンで幸せな毎日をお届けします。</p>
+                </div>
+            <div class="shopspace">
+                <h3>店内<br><span></span></h3>
+                    <h4>店内にはゆったりとしたイートインスペースもございます。</h4>
+                    <p><img src="img/about/shopspace01.png" width="480px" alt="イートインスペース"></p>
+                    <p class="text">ご購入いただいたパンは、店内のイートインスペースでもお召し上がりいただけます。また、当店オリジナルのコーヒー・紅茶・ソフトドリンクメニューもございます。<br>
+                    是非、焼き立てのパンとごゆっくりお楽しみください。</p>
+                </div>
+        </section>
+        </main>
+        </div>
+        <p class="btn-top"><a href="#all"><img src="img/btn-top.png"></a></p>
+        <footer>
+            <p><a href="bakery.html">HOME</a>｜<a href="bakery-about.html">ABOUT</a>｜<a href="bakery-menu.html">MENU</a>｜<a href="bakery-shopinfo.html">SHOP INFO</a>｜<a href="bakery-qa.html">Q&amp;A</a></p>
+            <p>Copyright（C) 職業訓練授業課題.All Rights Reserved.</p>
+        </footer>
+        </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MIURA BAKERY</title>
+<link href="bakery.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+  $(function(){
+    $("#nav-toggle").on("click",function(){
+      $("nav").slideToggle();
+      $(this).toggleClass("open");
+    });
+  });
+</script>   
+
+</head>
+
+<body>
+    <div id="all">
+    <header>
+        <h1><a href="bakery.html"><img src="img/logo.png" width="200" height="53" alt="ミウラベーカリー"/></a></h1>
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="bakery.html" class="browsing">HOME</a></li>
+            <li><a href="bakery-about.html">ABOUT</a></li>
+            <li><a href="bakery-menu.html">MENU</a></li>
+            <li><a href="bakery-shopinfo.html">SHOP INFO</a></li>
+            <li class="last"><a href="bakery-qa.html">Q&amp;A</a></li>
+        </ul>
+    </nav>
+    <div class="mainimage">
+        <img src="img/mainimage.jpg" width="1080" height="420">
+    </div>
+    <div class="line"></div>
+    <div class="outer">
+    <main class="top">
+        <section class="about">
+            <h2 class="first">ABOUT <span>-当店について-</span></h2>
+                <div class="box-1">
+                    <p class="img01"><img src="img/about-img01.jpg" width="250" alt="ミウラベーカリーのパン"></p>
+                    <h3>当店は無添加素材にこだわったベーカリーです</h3>
+                    <p>当店では無添加の素材を使用し、安心安全な材料で、熟練したパン職人が手づくりで仕上げています。おいしさと、楽しさと、健康のためにこだわりを尽くしたパンで幸せな毎日をお届けします。</p>
+                </div>
+                <div class="box-2">
+                    <p class="img01"><img src="img/about-img02.jpg" width="250" alt="イートインスペース"></p>
+                    <h3>店内でもお召し上がりいただけます</h3>
+                    <p>店内にはイートインスペースもございます。<br>
+                    ドリンクメニューもございますので、ゆっくりと焼き立てのパンをお楽しみいただけます。</p>
+                </div>
+            <div class="respoms">
+            <img src="img/about-img01.jpg" class="img02" alt="当店は無添加素材にこだわったベーカリーです">
+            <img src="img/about-img02.jpg" class="img02" alt="イートインスペース">
+            </div>
+        </section>
+        <section class="new">
+            <h2>NEW <span>-新着情報-</span></h2>
+            <dl>
+                <dt>2020年4月×日</dt>
+                <dd>新型コロナウイルスの影響を鑑みまして営業時間を16:00までとさせていただきます。</dd>
+                <dt>2020年4月×日</dt>
+                <dd>春の新商品「あまおうイチゴのデニッシュ」を追加しました！<br>詳しくはMENUページをご覧ください。</dd>
+                <dt>2020年4月×日</dt>
+                <dd>テキストテキストテキストテキスト</dd>
+                <dt>2020年4月×日</dt>
+                <dd>テキストテキストテキストテキストテキスト</dd>
+            </dl>
+        </section>
+        <section class="menu">
+            <h2>MENU <span>-メニュー-</span></h2>
+            <div class="bread">
+            <h3>パン</h3>
+                <div class="box">
+                    <p class="img"><img src="img/menu/bread-img01.jpg" width="200" height="120" alt="クロワッサン180円"><img src="img/label01.png" class="label" alt="人気ナンバーワン"></p>
+                    <p>クロワッサン<br>180円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/bread-img02.jpg" width="200" height="120" alt="ベーグル200円"><img src="img/label02.png" class="label" alt="人気ナンバーツー"></p>
+                    <p>ベーグル<br>200円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/bread-img03.jpg" width="200" height="120" alt="シナモンロール230円"><img src="img/label03.png" class="label" alt="人気ナンバースリー"></p>
+                    <p>シナモンロール<br>230円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/bread-img04.jpg" width="200" height="120" alt=""></p>
+                    <p>テキスト<br>xxx円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/bread-img05.jpg" width="200" height="120" alt=""></p>
+                    <p>テキスト<br>xxx円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/bread-img06.jpg" width="200" height="120" alt=""></p>
+                    <p>テキスト<br>xxx円</p>
+                </div>
+                </div>
+            <div class="drink">
+            <h3>ドリンク</h3>
+                <div class="box">
+                    <p class="img"><img src="img/menu/drink-img01.jpg" width="200" height="120" alt="カフェオレ"></p>
+                    <p>カフェオレ<br>320円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/juice-img01.jpg" width="200" height="120" alt="オレンジジュース"></p>
+                    <p>オレンジジュース<br>230円</p>
+                </div>
+                <div class="box">
+                    <p class="img"><img src="img/menu/tea-img01.jpg" width="200" height="120" alt="紅茶"></p>
+                    <p>紅茶<br>320円</p>
+                </div>
+            </div>
+        </section>
+        </main>
+        <div class="side">
+            <section class="shopinfo">
+                <h2>SHOP INFO <span>-店舗情報-</span></h2>
+                <h3>MIURA BAKERY</h3>
+                <p>〒123-4567<br>
+                〇〇県〇〇〇市〇〇〇〇〇　1-2-3<br>
+                TEL 123-4567-8910<br>
+                MAIL miurabakery.com<br>
+                営業時間 / 9:00~18:00<br>
+                定休日 / 月・火</p>
+            </section>
+            <section class="access">
+                <h2>ACCESS <span>-アクセス-</span></h2>
+                <p>〇〇駅より徒歩5分</p>
+                <p><img src="img/map.png"></p>
+            </section>
+        </div>
+        </div>
+        <p class="btn-top"><a href="#all"><img src="img/btn-top.png"></a></p>
+        <footer>
+            <p><a href="bakery.html">HOME</a>｜<a href="bakery-about.html">ABOUT</a>｜<a href="bakery-menu.html">MENU</a>｜<a href="bakery-shopinfo.html">SHOP INFO</a>｜<a href="bakery-qa.html">Q&amp;A</a></p>
+            <p>Copyright（C) 職業訓練授業課題.All Rights Reserved.</p>
+        </footer>
+        </div>
+</body>
+</html>

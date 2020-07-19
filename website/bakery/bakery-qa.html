@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MIURA BAKERY</title>
+<link href="bakery.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+  $(function(){
+    $("#nav-toggle").on("click",function(){
+      $("nav").slideToggle();
+      $(this).toggleClass("open");
+    });
+  });
+</script>   
+
+</head>
+
+<body>
+    <div id="all">
+    <header>
+        <h1><a href="bakery.html"><img src="img/logo.png" width="200" height="53" alt="ミウラベーカリー"/></a></h1>
+    <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="bakery.html">HOME</a></li>
+            <li><a href="bakery-about.html">ABOUT</a></li>
+            <li><a href="bakery-menu.html">MENU</a></li>
+            <li><a href="bakery-shopinfo.html">SHOP INFO</a></li>
+            <li class="last"><a href="bakery-qa.html" class="browsing">Q&amp;A</a></li>
+        </ul>
+    </nav>
+    <div class="subpage-img">
+        <img src="img/subpage-img02.jpg" width="1080" height="200">
+        <h2>Q&amp;A<br><span>-よくある質問-</span></h2>
+    </div>
+    <ol class="topic">
+        <li><a href="bakery.html">HOME</a></li>
+        <li>Q&amp;A</li>
+    </ol>
+    <div class="line"></div>
+    <div class="outer">
+    <main class="subpage">
+        <section class="qa">
+            <dl class="qalist">
+                <dt>Q.クレジットカード・電子マネーは使えますか？</dt>
+                <dd>A.はい。主要各会社のクレジットカードや電子マネー・交通系ICカードもご利用いただけます。</dd>
+                <dt>Q.ドリンクはテイクアウトできますか？</dt>
+                <dd>A.はい。ドリンクもテイクアウトできます。</dd>
+                <dt>Q.店内はペットも一緒に利用できますか？</dt>
+                <dd>A.申し訳ございません。店内はペット同伴でのご利用はお断りさせていただいております。</dd>
+            </dl>
+        </section>
+        </main>
+        </div>
+        <p class="btn-top"><a href="#all"><img src="img/btn-top.png"></a></p>
+        <footer>
+            <p><a href="bakery.html">HOME</a>｜<a href="bakery-about.html">ABOUT</a>｜<a href="bakery-menu.html">MENU</a>｜<a href="bakery-shopinfo.html">SHOP INFO</a>｜<a href="bakery-qa.html">Q&amp;A</a></p>
+            <p>Copyright（C) 職業訓練授業課題.All Rights Reserved.</p>
+        </footer>
+        </div>
+</body>
+</html>
