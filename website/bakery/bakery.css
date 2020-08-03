@@ -202,7 +202,8 @@
     }
     .menu .bread .img{
     width: 200px;
-    position: relative
+    position: relative;
+    margin-bottom: 10px;
     }
     .menu .box .label{
         border-radius: 0px;
@@ -257,8 +258,13 @@
         padding: 0px;
         margin: 0 auto;
     }
-    .subpage .bread,.subpage .drink,.subpage .commitment,.subpage .shopspace,.subpage .shopinfo, .subpage .qa{
+    .subpage .bread,.subpage .drink,.subpage .commitment,.subpage .shopspace,.subpage .shopinfo{
         background-color: #f7f4f4;
+        padding: 30px 15px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    .subpage .qa{
         padding: 30px 15px;
         margin-bottom: 40px;
         overflow: hidden;
@@ -315,13 +321,17 @@
     }
 
     /* Q&A */
+    .qa .qalist{
+        background-color: #f7f4f4;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
     .qa dt{
         font-weight: bold;
         font-size: 1.2em;
         margin-bottom: 10px;
-    }
-    .qa dd{
-        margin-bottom: 30px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #fff;
     }
     /*――――――――――――――――
     　　サイドエリア
@@ -501,12 +511,25 @@
     
     /* 768px以下 */
     @media screen and (max-width: 768px){
+        nav{
+            position: fixed;
+            top:80px;
+            left: 6px;
+            margin: 0px auto;
+            width: calc(100% - 16px);
+            z-index: 999;
+            display: none;
+        }
+        .mainimage,.subpage-img{
+            margin-top: 85px;
+        }
         nav li{
             width: 90%;
             float: none;
             border-right: none;
             border-bottom: 1px dotted #f7f4f4;
-            margin: 10px auto;
+            margin: 15px auto;
+            padding-bottom: 15px;
         }
         nav li a{
             width: 90%;
@@ -539,9 +562,12 @@
         .subpage-img h2{
             font-size: 1.2em;
         }
-        .side .shopinfo  ,.side .access{
+        .side .shopinfo ,.side .access{
             float: none;
             width: auto;
+        }
+        .side .access{
+            margin-top: 40px;
         }
         .side .access img{
             width: 100%;
@@ -550,10 +576,11 @@
             font-size: 1.2em;
         }
         header {
-            position: relative;
-        }
-        nav {
-            display: none;
+            position: fixed;
+            top:0px;
+            left: 0px;
+            width: 100%;
+            z-index: 999;
         }
         #nav-toggle {
             width: 30px;
@@ -579,6 +606,9 @@
         }
         #nav-toggle span:nth-child(3) {
             top: 22px;
+        }
+        .subpage-img h2 span{
+            margin-top: 8px;
         }
     }
     
@@ -612,6 +642,13 @@
             float: none;
             width: 96%;
             margin: 2%;
+        }
+        .btn-top{
+            margin-right: 10px;
+            width: 50%;
+        }
+        .btn-top img{
+            width: 60px;
         }
     }
     

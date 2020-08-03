@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <script src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+  <script src="js/jquery.wavify.js"></script>
     <script>
       //100pxスクロールしたら.gotopを表示
       $(window).on("scroll", function() {
@@ -43,6 +44,21 @@
 	       }
           });
     </script>
+    <script>
+        //要素をふんわり表示させる
+        $(function(){
+            $(window).scroll(function (){
+                $('.fadein').each(function(){
+                    var elemPos = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > elemPos - windowHeight + 200){
+                        $(this).addClass('scrollin');
+                    }
+                });
+            });
+        });
+        </script>
 </head>
 <body>
   <div id="all">
@@ -72,7 +88,7 @@
       <section class="message">
         <div class="w-1000">
         <h2>AQUARIUMで癒されよう</h2>
-        <div class="box flexbox">
+        <div class="box flexbox fadein">
         <div class="text-area">
           <p>AQUARIUMは都会の真ん中にある癒しをテーマにした水族館です。お休みの日はもちろんお仕事帰りにも気軽に立ち寄っていただけます。<br>癒しの空間で生き物たちとゆっくりとお過ごしください。</p>
         　<p class="message-cat">What's<br><span>AQUARIUM?</span></p>
@@ -85,7 +101,7 @@
       <section class="news">
         <div class="w-1000">
         <h2>AQUARIUMニュース</h2>
-        <div class="flexbox">
+        <div class="flexbox fadein">
       <div class="box">
           <a href="#">
           <p>2020.06.10</p>
@@ -116,7 +132,7 @@
       <section class="recommend">
         <div class="w-1000">
         <h2>オススメのコース</h2>
-      <div class="box flexbox">
+      <div class="box flexbox fadein">
           <a href="#">
         <div class="recommend-img">
             <img src="img/recomend-img-01.jpg" width="400" height="150" alt="カップルで癒される"/>
@@ -130,7 +146,7 @@
           </div>
               </a>
         </div>
-        <div class="box flexbox">
+        <div class="box flexbox fadein">
             <a href="#">
         <div class="recommend-img">
             <img src="img/recomend-img-03.jpg" width="400" height="150" alt="友達と癒される"/>
@@ -149,7 +165,7 @@
       <section class="friend">
         <div class="w-1000">
         <h2>AQUARIUMの仲間</h2>
-          <div class="box flex-right">
+          <div class="box flex-right fadein">
         <p><img src="img/friend-img-01.jpg" width="400" height="300" alt="カクレクマノミ"/></p>
               <div class="text-area">
               <h3>カクレクマノミ</h3>
@@ -157,7 +173,7 @@
               </div>
               <p class="name-right">Clown fish</p>
           </div>
-          <div class="box flex-left">
+          <div class="box flex-left fadein">
         <p><img src="img/friend-img-02.jpg" width="400" height="300" alt="クラゲ"/></p>
               <div class="text-area">
               <h3>クラゲ</h3>
@@ -165,7 +181,7 @@
               </div>
               <p class="name-left">Jellyfish</p>
           </div>
-          <div class="box flex-right">
+          <div class="box flex-right fadein">
         <p><img src="img/friend-img-03.jpg" width="400" height="300" alt="ラッコ"/></p>
               <div class="text-area">
               <h3>ラッコ</h3>
@@ -173,7 +189,7 @@
               </div>
               <p class="name-right">Sea otter</p>
           </div>
-        <div class="box flex-left">
+        <div class="box flex-left fadein">
         <p><img src="img/friend-img-04.jpg" width="400" height="300" alt="エイ"/></p>
             <div class="text-area">
               <h3>エイ</h3>
@@ -187,7 +203,7 @@
       <section class="access">
         <div class="w-1000">
         <h2>アクセス</h2>
-        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.9862031148664!2d139.75291234853128!3d35.70254567255244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c3f73394261%3A0x6421387fa3cb156d!2z5rC06YGT5qmL6aeF!5e0!3m2!1sja!2sjp!4v1592196209333!5m2!1sja!2sjp" width="700" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="map fadein"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.9862031148664!2d139.75291234853128!3d35.70254567255244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c3f73394261%3A0x6421387fa3cb156d!2z5rC06YGT5qmL6aeF!5e0!3m2!1sja!2sjp!4v1592196209333!5m2!1sja!2sjp" width="700" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <div class="text-area">
           <p>JR「水道橋駅」西口より徒歩8分</p>
           <p>東京メトロ丸ノ内線・南北線「後楽園駅」2番出口より徒歩5分</p>
@@ -200,7 +216,7 @@
     </main>
     <footer>
       <div class="ticket-btn-area">
-        <div class="w-1000 flexbox">
+        <div class="w-1000 flexbox fadein">
         <div class="ticket-link"><a href="#"><div class="box-1"><span class="text-1">お得な前売り券はコチラ</span><span class="text-2">ONEDAY PASSPORT</span></div></a></div>
         <div class="ticket-link"><a href="#"><div class="box-1"><span class="text-1">もっとお得な年間パス</span><span class="text-2">ANNUAL PASSPORT</span></div></a></div>
       </div>

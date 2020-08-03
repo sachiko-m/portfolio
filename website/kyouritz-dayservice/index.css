@@ -4,6 +4,7 @@ p, h1, h2, h3, h4, ul, ol, dl, dd, body, form {
   margin: 0px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   color: #4e2f14;
+  letter-spacing: 0.1em;
 }
 img {
   border: none;
@@ -77,7 +78,9 @@ header .header-inner .contact {
   text-decoration: none;
   display: block;
   border-radius: 5px;
-  padding: 4px 10px;
+  padding: 7px 10px;
+  letter-spacing: 0em;
+  font-weight: 650;
   background-color: #e5a323;
 }
 header .header-inner .tel a:hover ,.header-inner .contact a:hover{
@@ -122,10 +125,6 @@ header nav li a:hover {
   color: #8EB826;
   border-bottom: 2px solid #8EB826;
 }
-#all .top {
-  padding-bottom: 100px;
-}
-
 
 .top-img {
   width: 1100px;
@@ -151,8 +150,8 @@ header nav li a:hover {
 
 .ivent {
   background-color: #f2eee8;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .ivent h2 {
@@ -194,8 +193,10 @@ header nav li a:hover {
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.2em;
+  letter-spacing: 0em;
+  font-weight: 650;
 }
-.ivent-inner.clearfix .text a:hover {
+.ivent-inner .text a:hover {
   background-color: #fac559;
 }
 
@@ -216,8 +217,8 @@ header nav li a:hover {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .info1 .new .title , .calender .title {
   text-align: center;
@@ -283,8 +284,8 @@ header nav li a:hover {
 .info2 {
   width: auto;
   background-color: #f2eee8;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 150px;
+  padding-bottom: 200px;
 }
 .info2 .info2-inner {
   width: 1100px;
@@ -318,7 +319,6 @@ header nav li a:hover {
 #all .pagetop{
   text-align: center;
   width: 150px;
-  margin-top: 60px;
   margin-bottom: 10px;
   border-radius: 10px;
   position: absolute;
@@ -376,7 +376,7 @@ footer a:hover {
   color: #775635;
   border-bottom: 2px double #8EB826;
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .subpage h3 {
   margin-bottom: 20px;
@@ -388,9 +388,12 @@ footer a:hover {
   margin-top: 130px;
   padding-bottom: 50px;
 }
+.subpage .topic{
+ margin-bottom: 80px;   
+}
 .subpage .topic li {
   display: inline;
-
+  font-size: 0.8em;
 }
 .subpage .topic li a {
   color: #5F6527;

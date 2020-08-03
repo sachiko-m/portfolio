@@ -45,6 +45,20 @@ img{
   display: none;
 }
 
+/*　要素をふんわり表示　*/
+/* 画面外にいる状態 */
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 20px);
+	transition : all 1500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
 /*-------------------------------------
 　　ヘッダー・ナビゲーションエリア
 -------------------------------------*/
@@ -124,7 +138,7 @@ header nav li a.header-ticket-btn:hover{
 　　TOPページ　メインエリア
 -------------------------------------*/
 .message,.news,.recommend,.friend,.access {
-  padding: 80px 0px 80px 0px;
+  padding: 150px 0px 150px 0px;
 }
 .top .w-1000{
   padding: 40px 0px 40px 0px;
@@ -133,7 +147,7 @@ header nav li a.header-ticket-btn:hover{
   font-size: 1.7em;
   text-align: center;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   color: #073C6B;
   letter-spacing: 0.2em;
 }
@@ -291,16 +305,18 @@ header nav li a.header-ticket-btn:hover{
 }
 .friend .box .text-area{
     padding: 0px 30px;
+    z-index: 1;
 }
 .friend .box .text-area h3{
-    margin: 30px auto;
+    margin: 20px auto;
+    padding-bottom: 5px;
     font-size: 1.5em;
     border-bottom: 1px solid #fff;
 }
 .name-right{
     position: absolute;
     color: #fff;
-    opacity: 0.4;
+    opacity: 0.2;
     right: 40px;
     bottom: 50px;
     font-size: 7em;
@@ -309,12 +325,13 @@ header nav li a.header-ticket-btn:hover{
 .name-left{
     position: absolute;
     color: #fff;
-    opacity: 0.4;
+    opacity: 0.2;
     left: 40px;
     bottom: 50px;
     font-size: 7em;
     font-weight: bold;
 }
+
 
 
 /*　アクセスエリア　*/
