@@ -5,12 +5,26 @@
 <title>PORTFOLIO</title>
 <link href="portfolio.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+      $(function(){
+          $(".nav-toggle").on("click",function(){
+          $("nav ul").slideToggle();
+          $(this).toggleClass("open");
+          });
+          });
+    </script>
 </head>
 
 <body>
     
     <header>
-    <nav> 
+    <nav>
+        <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
         <ul>
             <li><a href="index.html" class="browsing">TOP</a></li>
             <li><a href="portfolio-works.html">WORKS</a></li>
@@ -22,6 +36,7 @@
     <div class="mainimage">
         <div class="main-title">
             <h1><a href="index.html">PORTFOLIO</a></h1>
+            
         </div>
     </div>
     

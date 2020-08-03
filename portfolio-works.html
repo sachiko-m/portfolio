@@ -5,12 +5,26 @@
 <title>PORTFOLIO</title>
 <link href="portfolio.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+      $(function(){
+          $(".nav-toggle").on("click",function(){
+          $("nav ul").slideToggle();
+          $(this).toggleClass("open");
+          });
+          });
+    </script>
 </head>
 
 <body>
     
     <header>
-    <nav> 
+    <nav>
+        <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
         <ul>
             <li><a href="index.html">TOP</a></li>
             <li><a href="portfolio-works.html" class="browsing">WORKS</a></li>
@@ -22,6 +36,7 @@
     <div class="mainimage">
         <div class="main-title">
             <h1><a href="index.html">PORTFOLIO</a></h1>
+            
         </div>
     </div>
         
@@ -29,7 +44,7 @@
         <section class="sub-works outer">
             <h2>WORKS</h2>
             <div class="content" id="site-3">
-                <img src="img/aquarium-img.jpg" width="840px">
+                <a href="website/aquarium/index.html" target="_blank"><img src="img/aquarium-img.jpg" width="840px"></a>
                 <dl>
                     <dt>サイト名</dt>
                     <dd>AQUARIUM</dd>
@@ -45,25 +60,25 @@
                     <dt>使用ソフト</dt>
                     <dd>Photoshop / XD / Brackets</dd>
                     <dt>担当箇所</dt>
-                    <dd>サイト設計 / デザイン / コーディング / レスポンシブ</dd>
-                    <dt>レスポンシブ</dt>
+                    <dd>サイト設計 / デザイン /コーディング / レスポンシブル </dd>
+                    <dt>レスポンシブル</dt>
                     <dd>スマホ / タブレット / PC</dd>
                     <dt>制作時間</dt>
                     <dd>3日</dd>
                     <dt>工夫した点など</dt>
                     <dd>ターゲット層は大人がメインなので、ダークブルーを使用し大人っぽいイメージに寄せたデザインにしました。<br>
-                    都会の真ん中にあり、癒しをテーマにした水族館なので、ボタンのホバー時や、ヘッダーの切り替わりがふんわりと変化するようにし、癒しを感じてもらえるようにしました。<br>
-                    また、チケット購入ボタンは目立つようにオレンジ色を使用しました。
+                    都会の真ん中にあり、癒しをテーマにした水族館なので、ボタンのホバー時や、ヘッダーの切り替わりがふんわりと変化するようにし、癒しを感じてもらえるようにしました<br>
+                    チケット購入ボタンは目立つようにオレンジ色を使用しました。
                     </dd>
                     <dt>補足</dt>
-                    <dd>職業訓練校の個人卒業制作作品として作成しました。<br>
+                    <dd>職業訓練校の個人制作として作成。<br>
                     サブページは未制作です。
                     </dd>
                 </dl>
                 <div class="link-btn"><a href="website/aquarium/index.html" target="_blank">サイトへ</a></div>
             </div>
             <div class="content" id="site-4">
-                <img src="img/career-design-img.jpg" width="840px">
+                <a href="website/career-design/index.html" target="_blank"><img src="img/career-design-img.jpg" width="840px"></a>
                 <dl>
                     <dt>サイト名</dt>
                     <dd>株式会社キャリアデザイン</dd>
@@ -77,8 +92,8 @@
                     <dt>使用ソフト</dt>
                     <dd>XD / DreamWeaver / Brackets /　ppt</dd>
                     <dt>担当箇所</dt>
-                    <dd>サイト設計 / コーディング（index・flow・client・faqのページ） / レスポンシブ（全ページ）/ プレゼン資料の制作</dd>
-                    <dt>レスポンシブ</dt>
+                    <dd>サイト設計 / コーディング（index・flow・client・faqのページ） / レスポンシブル（全ページ）/ プレゼン資料の制作</dd>
+                    <dt>レスポンシブル</dt>
                     <dd>スマホ / タブレット / PC</dd>
                     <dt>制作時間</dt>
                     <dd>2週間</dd>
@@ -95,7 +110,7 @@
                 <div class="link-btn"><a href="website/career-design/index.html" target="_blank">サイトへ</a></div>
             </div>
             <div class="content" id="site-3">
-                <img src="img/bakery-img.jpg" width="840px">
+                <a href="website/bakery/bakery.html" target="_blank"><img src="img/bakery-img.jpg" width="840px"></a>
                 <dl>
                     <dt>サイト名</dt>
                     <dd>MIURA BAKERY</dd>
@@ -109,8 +124,8 @@
                     <dt>使用ソフト</dt>
                     <dd>Illustrator / Brackets</dd>
                     <dt>担当箇所</dt>
-                    <dd>デザイン / コーディング / レスポンシブ</dd>
-                    <dt>レスポンシブ</dt>
+                    <dd>デザイン / コーディング / レスポンシブル</dd>
+                    <dt>レスポンシブル</dt>
                     <dd>スマホ / タブレット / PC</dd>
                     <dt>制作時間</dt>
                     <dd>1140分(デザイン:480分 / コーディング:300分 / レスポンシブル:360)</dd>
@@ -123,7 +138,7 @@
                 <div class="link-btn"><a href="website/bakery/bakery.html" target="_blank">サイトへ</a></div>
             </div>
             <div class="content" id="site-2">
-                <img src="img/dayservice-img.jpg" width="840px">
+                <a href="website/kyouritz-dayservice/index.html" target="_blank"><img src="img/dayservice-img.jpg" width="840px"></a>
                 <dl>
                     <dt>サイト名</dt>
                     <dd>キョウリツデイサービス</dd>
@@ -140,7 +155,7 @@
                     <dd>Photoshop / DreamWeaver / Brackets</dd>
                     <dt>担当箇所</dt>
                     <dd>デザイン / コーディング</dd>
-                    <dt>レスポンシブ</dt>
+                    <dt>レスポンシブル</dt>
                     <dd>未対応</dd>
                     <dt>制作時間</dt>
                     <dd>740分(デザイン:180分 / コーディング:540分 / 修正:20分)</dd>
@@ -155,7 +170,7 @@
                 <div class="link-btn"><a href="website/kyouritz-dayservice/index.html" target="_blank">サイトへ</a></div>
             </div>
             <div class="content" id="site-1">
-                <img src="img/pickles-img.jpg" width="840px">
+                <a href="website/pickles/pickles.html" target="_blank"><img src="img/pickles-img.jpg" width="840px"></a>
                 <dl>
                     <dt>サイト名</dt>
                     <dd>西洋風漬物ピックルス</dd>
@@ -169,7 +184,7 @@
                     <dd>Photoshop / DreamWeaver / Brackets</dd>
                     <dt>担当箇所</dt>
                     <dd>デザイン / コーディング</dd>
-                    <dt>レスポンシブ</dt>
+                    <dt>レスポンシブル</dt>
                     <dd>未対応</dd>
                     <dt>制作時間</dt>
                     <dd>450分(デザイン:100分 / コーディング:350分)</dd>
