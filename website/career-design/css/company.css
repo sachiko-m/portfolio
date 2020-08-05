@@ -79,6 +79,57 @@
     font-weight: bold;
 }
 
+/*-------------------------------------
+　　【会社概要】レスポンシブ設定
+-------------------------------------*/
+@media screen and (max-width: 960px){
+    .subpage .company .f-container{
+        flex-direction: column-reverse;
+    }
+    .subpage .company .inner .f-container .text{
+        width: 100%;
+    }
+    .subpage .company .shacho-message .message {
+    left: -100px;
+}
+    .subpage .company .shacho-message .message img{
+    width: 90%;
+}
+    .subpage .company .shacho-message .shacho {
+        right: 0px;
+    }
+    .subpage .company .shacho-message .shacho img{
+        width: 90%;
+    }
+    .subpage .company .inner .shacho-message {
+    height: 500px;
+}
+}
+
+@media screen and (max-width: 640px){
+    .subpage .company .f-container{
+        flex-direction: column-reverse;
+    }
+    .subpage .company .shacho-message .message {
+    left: -40px;
+}
+    .subpage .company .shacho-message .message img{
+    width: 95%;
+}
+    .subpage .company .shacho-message .shacho {
+        right: -160px;
+    }
+    .subpage .company .shacho-message .shacho img{
+        width: 50%;
+    }
+    .subpage .shacho-message {
+    height: 400px;
+}
+    .subpage .company .name {
+    right: -80px;
+}
+}
+
 
 
 

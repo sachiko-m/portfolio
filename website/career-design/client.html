@@ -11,6 +11,8 @@
 <link rel="shortcut icon" href="img/favicon.ico">
 <script src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/slider.js">
+</script>
 <script>
 $(function(){
   //#nav-toggleをクリックした時の設定
@@ -78,22 +80,22 @@ $(function(){
     <div class="inner">
   <h2 class="headline-a">キャリアデザインの強み</h2>
     <div class="flexbox">
-  <div class="box">
+  <div class="box fadein">
     <p class="icon-reason"><img src="img/icon_reason1.png" width="76" height="76" alt="強み１"/></p>
     <h3>強み１</h3>
     <p>強み１の内容を入力します。</p>
   </div>
-  <div class="box">
+  <div class="box fadein">
     <p><img src="img/icon_reason1.png" width="76" height="76" alt="スキルが身につく！"/></p>
     <h3>強み2</h3>
     <p>強み２の内容を入力します。</p>
   </div>
-  <div class="box">
+  <div class="box fadein">
     <p><img src="img/icon_reason1.png" width="76" height="76" alt="資格取得を支援"/></p>
     <h3>強み3</h3>
     <p>強み３の内容を入力します。</p>
   </div>
-  <div class="box">
+  <div class="box fadein">
     <p><img src="img/icon_reason1.png" width="76" height="76" alt="充実の福利厚生"/></p>
     <h3>強み4</h3>
     <p>強み４の内容を入力します。</p>
@@ -108,8 +110,8 @@ $(function(){
     <h2 class="headline-a">求人広告掲載までの流れ</h2>
          
   <div class="flow">
-    <h3><sapn>STEP1</sapn> お申込み</h3>
-    <div class="line">
+    <h3 class="fadein"><sapn>STEP1</sapn> お申込み</h3>
+    <div class="line fadein">
         <p><img src="img/flow1.png" width="350" height="234" alt="仮登録"/></p>
       <div>
         <p class="text">まずはお申込みフォームかお電話にてお申込みください</p>
@@ -117,8 +119,8 @@ $(function(){
       </div>
   </div>
   <div class="flow">
-    <h3><sapn>STEP2</sapn> お打ち合わせ</h3>
-    <div class="line">
+    <h3 class="fadein"><sapn>STEP2</sapn> お打ち合わせ</h3>
+    <div class="line fadein">
         <p><img src="img/flow2.png" width="350" height="234" alt="ご来社"/></p>
       <div>
         <p class="text">担当が、お電話・メール、または訪問にて詳細をお伺いいたします。</p>
@@ -126,8 +128,8 @@ $(function(){
       </div>
   </div>
      <div class="flow">
-    <h3><sapn>STEP3</sapn> 求人掲載</h3>
-    <div class="line">
+    <h3 class="fadein"><sapn>STEP3</sapn> 求人掲載</h3>
+    <div class="line fadein">
         <p><img src="img/flow3.png" width="350" height="234" alt="お仕事紹介"/></p>
       <div>
         <p class="text">お打ち合わせの後は就業条件・仕事内容などを最終確認し、問題がなければご契約・求人掲載となります。</p>
@@ -143,11 +145,11 @@ $(function(){
        <div class="inner">
     <h2 class="headline-a">よくある質問</h2>
     <dl>
-      <div class="box">
+      <div class="box fadein">
       <dt>Q 派遣社員を正社員として直接雇用したいのですが大丈夫なのでしょうか？</dt>
       <dd>A 派遣契約が終了した場合には、派遣社員を正社員として雇用可能です。憲法第２２条の職業選択の自由により派遣社員が派遣先企業に正社員として就職できます。その際は一度、当社にご相談下さい。</dd>
       </div>
-      <div class="box">
+      <div class="box fadein">
       <dt>Q 派遣の料金形態はどういったものですか？</dt>
       <dd>Q 業務内容、求められるスキルによって変わります。基本的には（派遣単価×派遣スタッフの実働時間数）といった金額になります。</dd>
       </div>
@@ -156,6 +158,7 @@ $(function(){
        </div>
     </div>
   
+  </div>
   <p class="gotop"><a href="#all"><img src="img/btn_gotop.png" width="70" height="70" alt="ページトップへ"/></a></p>
   </main>
 <!------------------------------- フッターエリア --------------------------------->
@@ -166,7 +169,7 @@ $(function(){
 <div class="footer-contact">
     <div class="inner">
     <h2 class="headline-a">お問い合わせ</h2>
-    <p class="logo-footer"><img src="img/copy_contact.png" width="953" height="107" alt="さあ、あなたのキャリアをデザインしよう"/></p>
+    <p class="logo-footer fadein"><img src="img/copy_contact.png" width="953" height="107" alt="さあ、あなたのキャリアをデザインしよう"/></p>
     <div class="flexbox">
     <div class="box">
     <p class="contact-ttl">Webでお問い合わせ</p>
@@ -221,7 +224,7 @@ $(function(){
     <p class="copyright">copyright (c) 2019 careerdesign Co.,Ltd. all rights reserved. Powered by ShintTowa.Investment Co.,Ltd.</p>
 </div>
 </footer>
-    
+    </div>
     
 </body>
 </html>

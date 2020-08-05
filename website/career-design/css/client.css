@@ -12,10 +12,10 @@
   align-items: stretch;
 }
 .sub-strength .box{
-  background-color: #F9F9F9;
+  background-color: #FFF;
   text-align: center;
   width: 370px;
-  margin: 10px;
+  margin: 15px;
   padding: 30px;
 }
 .sub-strength h3{
@@ -44,7 +44,7 @@
 }
 .sub-flow h3 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
 }
 .sub-flow .line {
   display: flex;
@@ -78,3 +78,11 @@
     border-bottom: 1px solid #CBCBCB;
 }
 
+/*-------------------------------------
+　　【企業の方】レスポンシブ設定
+-------------------------------------*/
+@media screen and (max-width: 640px){
+    .subpage .sub-flow h3 {
+        font-size: 24px;
+    }
+    }

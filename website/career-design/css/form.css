@@ -9,9 +9,10 @@
 }
 
 .subpage .contact #form1 table {
-	border-collapse: collapse;
-	margin-top: 10px;
-
+    border-collapse: collapse;
+    margin-top: 10px;
+    /* [disabled]margin-left: auto; */
+    /* [disabled]margin-right: auto; */
 }
 .subpage .contact #form1 textarea::placeholder {
 	color: #BBBBBB;
@@ -33,14 +34,13 @@
 	border-top: 1px solid #65CD6A;
 }
 .subpage .contact #form1 .text {
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 10px;
-	/* [disabled]color: #1A7F1F; */
-	background-color: #FFFFFF;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	font-size: 1.2em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
 }
 
 .subpage .contact #form1 td {
