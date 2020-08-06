@@ -94,7 +94,7 @@ section{
 .fadein {
 	opacity : 0;
 	transform : translate(0px, 50px);
-	transition : all 2000ms;
+	transition : all 1500ms;
 	}
 
 /* 画面内に入った状態 */
@@ -488,7 +488,8 @@ nav ul a.header-contact-btn::after{
   margin-bottom: 20px;
 }
 .top-faq .faqlist img{
-  margin-right: 30px;
+  margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 /*　先輩の声　*/
