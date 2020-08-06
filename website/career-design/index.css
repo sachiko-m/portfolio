@@ -769,9 +769,11 @@ footer .footer-contact .headline-a{
     top: 70px;
     right: 0;
     width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
     padding-bottom: 100px;
-    -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
+    transform: translateZ(0);
     background-color: rgba(0,0,0,0.8);
     }
 .font-color-black{
