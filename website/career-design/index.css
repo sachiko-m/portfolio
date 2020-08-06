@@ -758,7 +758,7 @@ footer .footer-contact .headline-a{
 }
     header nav li{
         flex-basis :50px;
-        padding: 50px 0px;
+        padding: 10px 0px;
         text-align: center;
     }
     header nav li a.sub-color-black{
@@ -771,7 +771,7 @@ footer .footer-contact .headline-a{
     bottom: 0px;
     width: 100%;
     height: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding-bottom: 100px;
     overflow-y: scroll;
     transform: translateZ(0);
