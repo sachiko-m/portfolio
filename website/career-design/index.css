@@ -107,7 +107,6 @@ section{
     サブページ　共通の設定
 --------------------------------*/
 .subpage {
-    background-color: #F9F9F9;
     padding: 30px 0 100px 0;
 }
 
@@ -217,6 +216,7 @@ header{
     margin-right: auto;
     float: left;
     width: 189px;
+    line-height: 1em;
 }
 nav{
     float: right;
@@ -476,6 +476,7 @@ nav ul a.header-contact-btn::after{
   background-image: url("img/bg_faq.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
 }
 .top-faq .faqlist .box{
   background-color: #fff;
@@ -769,8 +770,9 @@ footer .footer-contact .headline-a{
     right: 0;
     width: 100%;
     padding-bottom: 100px;
+    -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
-        background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
     }
 .font-color-black{
     color: #fff;
@@ -879,6 +881,16 @@ footer .footer-contact .headline-a{
   
 
 @media screen and (max-width: 640px){
+    header{
+        height: 45px;
+        padding-top: 15px;
+    }
+    header h1 img{
+        width: 70%;
+    }
+    header nav ul{
+        top:60px;
+    }
     /* メインイメージ */
     .top-heroimage{
     background-image: url("img/mainimage_mobile.png");
@@ -941,6 +953,17 @@ footer .footer-contact .headline-a{
     .footer-contact .flexbox{
         flex-direction:column-reverse;
         text-align: center;
+    }
+    .footer-contact .footer-contact-btn-tb a{
+        font-size:1.2em;
+        padding: 10px 40px;
+    }
+    .contact-tel{
+        font-size: 1.8em
+    }
+    /* フッター電話番号 */
+    .footer-tel{
+        font-size: 1.8em
     }
     /* TOPへ戻るボタン */
     .gotop{
