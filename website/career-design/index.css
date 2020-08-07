@@ -408,6 +408,7 @@ nav ul a.header-contact-btn::after{
 
 /*　求人事例　*/
 .top-job{
+    z-index: -2;
     background-color: #F9F9F9;
     position: relative;
 }
@@ -448,7 +449,7 @@ nav ul a.header-contact-btn::after{
 }
 
 .top-job::before{
-    z-index: -99;
+    z-index: -1;
     content: "";
     display: block;
     position: absolute;
@@ -456,7 +457,7 @@ nav ul a.header-contact-btn::after{
     top: 0;
     border-width: 0px 0px 50vh 30vw ;
     border-style: solid;
-    border-color: transparent #A1DE64 ;
+    border-color: transparent #A1DE64;
 }
 .top-job::after{
     z-index: -99;
@@ -467,7 +468,7 @@ nav ul a.header-contact-btn::after{
     bottom: 0;
     border-width: 0px 0px 50vh 30vw ;
     border-style: solid;
-    border-color: #A1DE64  transparent;
+    border-color: #A1DE64 transparent;
 }
 
 
@@ -681,6 +682,9 @@ footer .footer-contact .headline-a{
 .footer-link-area li{
     margin-bottom: 20px;
 }
+footer .footer-logo-area ul{
+    margin-top: 10px;
+}
 
 
 /*---------------------------------
@@ -788,13 +792,13 @@ footer .footer-contact .headline-a{
         height: 23px;
         position: absolute;
         right: 20px;
-        top: 13px;
+        top: 20px;
         cursor: pointer;
         z-index: 999;
     }
     .nav-toggle span{
         width: 100%;
-        height: 3px;
+        height: 2px;
         display: block;
         position: absolute;
         left: 0px;
@@ -896,14 +900,21 @@ footer .footer-contact .headline-a{
     header nav ul{
         top:48px;
     }
+    .nav-toggle{
+        right: 20px;
+        top: 13px;
+    }
     /* メインイメージ */
     .top-heroimage{
     background-image: url("img/mainimage_mobile.png");
-      background-position: right -200px top 0px;
+        background-position: right -70px top 0px;
+         background-size: cover;
+        min-height: 500px!important;
   }    
   .top-heroimage-cat img{
-    top: 70vh;
-    width: 90vw;
+    top: 50vh;
+    left: -40px;
+    width: 85vw;
     height: auto;
 }
   .sub-title h2 {
@@ -932,7 +943,7 @@ footer .footer-contact .headline-a{
         position: static;
         margin: 30px auto;
         width: 94%;
-        background-color: rgba(255,255,255,0.9);
+        background-color:transparent;
     }
     .top-voice img{
         position: static;
@@ -940,7 +951,6 @@ footer .footer-contact .headline-a{
         padding-top: 20px;
         display: block;
         z-index: 20;
-        box-shadow: none;
 }
     .top-voice .voice-text{
         float: right;
@@ -948,7 +958,8 @@ footer .footer-contact .headline-a{
         position: relative;
         width: auto;
         padding: 5%;
-        background-color: none;
+        margin-top: 10px;
+        background-color: rgba(255,255,255,0.9);
     }
   .footer-main-area .flexbox{
     flex-direction:column;
@@ -969,6 +980,10 @@ footer .footer-contact .headline-a{
     /* フッター電話番号 */
     .footer-tel{
         font-size: 1.8em
+    }
+    /* コピーライト */
+    .copyright{
+        font-size: 0.6em
     }
     /* TOPへ戻るボタン */
     .gotop{
