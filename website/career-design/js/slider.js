@@ -4,7 +4,7 @@ $(function(){
                 var elemPos = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
-                if (scroll > elemPos - windowHeight + 10){
+                if (scroll > elemPos - windowHeight + 5){
                 $(this).addClass('scrollin');
              }
           });
