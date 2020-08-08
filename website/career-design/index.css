@@ -758,7 +758,7 @@ footer .footer-logo-area ul{
     header .flexbox{
     flex-direction: column;
         align-items: stretch ;
-        padding-top: 70px;
+        padding-top: 40px;
       display: none;
 }
     header nav li{
