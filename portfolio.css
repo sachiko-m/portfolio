@@ -275,9 +275,9 @@
         .nav-toggle span:nth-child(4){
             top: 18px;
             background-color:transparent;
-            font-size: 3px;
+            font-size: 0.5em;
             text-align: center;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.1em;
             color:#fff;
             height: auto;
         }
