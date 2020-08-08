@@ -300,6 +300,13 @@
         padding-top: 8px;
         font-size: 0.9em;
         }
-        
+        .subpage .content{
+            padding: 30px 15px;
+            width: calc(100% - 30px);
+        }
+        .subpage .outer{
+            margin: auto 10px auto 10px;
+            width: calc(100% - 20px);
+        }
     }
     
