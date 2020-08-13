@@ -921,7 +921,7 @@ footer .footer-logo-area ul{
     height: auto;
 }
   .sub-title h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .sub-mainimage p  {
   font-size: 20px;
@@ -964,11 +964,10 @@ footer .footer-logo-area ul{
         margin-top: 10px;
         background-color: rgba(255,255,255,0.9);
     }
-  .footer-main-area .flexbox{
+     /* フッター */
+    .footer-main-area .flexbox{
     flex-direction:column;
   }
-    
-    /* フッターお問い合わせ */
     .footer-contact .flexbox{
         flex-direction:column-reverse;
         text-align: center;
@@ -980,15 +979,12 @@ footer .footer-logo-area ul{
     .contact-tel{
         font-size: 1.8em
     }
-    /* フッター電話番号 */
     .footer-tel{
         font-size: 1.8em
     }
-    /* コピーライト */
     .copyright{
         font-size: 0.6em
     }
-    /* TOPへ戻るボタン */
     .gotop{
         right:10px;
         bottom:10px;
