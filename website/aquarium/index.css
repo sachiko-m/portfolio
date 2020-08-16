@@ -465,7 +465,8 @@ footer p,footer a{
   color: #fff;
 }
 footer .sitemap-area a:hover{
-  border-bottom: 1px solid #fff;
+  color: #d3d3d3;
+  transition: 0.5s;
 }
 footer .sitemap-area{
   margin: 50px auto 50px auto;
@@ -520,7 +521,10 @@ footer .sitemap-area{
     
   /* ヘッダーロゴ */
   header h1 img{
-    width: 75%;      
+    width: 75%;
+    }
+    header h1{
+    padding-top: 17px;
     }
     
   /* ナビゲーションエリア */
@@ -541,14 +545,14 @@ footer .sitemap-area{
     text-align: center;
   }
   nav ul li a{
-    padding: 10px 0 10px 0; 
+    padding: 5px 0 5px 0; 
   }
   nav ul li a.header-ticket-btn{
     width: 13em;
     margin: 0px auto;
   }
   nav ul li:last-child{
-    padding-top: 30px;
+    padding-top: 20px;
   }
     .nav-toggle{
         width: 27px;
@@ -587,6 +591,7 @@ footer .sitemap-area{
   }
   .message .text-area{
     padding: 20px 0px;
+    font-size: 0.9em;
   }
   
   .map{
@@ -676,6 +681,9 @@ footer .sitemap-area{
     flex-direction: column;
     justify-content: space-around;
 }
+    .friend .box{
+        padding: 30px
+    }
   .friend .box .text-area{
     padding: 0px;
   }
@@ -702,13 +710,27 @@ footer .sitemap-area{
 }
   
   /* サイトマップエリア */
+    footer .sitemap-area{
+        border-top: none;
+        width: 100%;
+        margin-top: 20px;
+    }
   .sitemap-area .flexbox{
   flex-direction: column;
 }
-  .footer-address,.sitemap-link-1,.sitemap-link-2{
-    margin-bottom: 20px;
+    footer img{
+        padding: 10px;
+    }
+  .footer-address{
+    padding: 10px 10px 30px 10px;
   }
-    
+  .sitemap-link-1 li, .sitemap-link-2 li{
+      padding: 7px 10px;
+      border-bottom: 1px solid #fff;
+    }
+    .sitemap-link-1 li:first-child{
+     border-top: 1px solid #fff;
+    }
     .bottomBar p{
         font-size:0.5em;
         font-weight:normal;
