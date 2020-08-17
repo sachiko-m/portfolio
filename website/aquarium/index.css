@@ -63,7 +63,6 @@ img{
     サブページ　共通の設定
 --------------------------------*/
 .subpage{
-    background-color: aqua;
     margin: 60px auto;
 }
 
@@ -388,19 +387,19 @@ h2{
 
 
 /*　アクセスエリア　*/
-.access{
+top .access{
   background-color: aliceblue;
 }
-.map iframe{
+top .map iframe{
   background-color: aqua;
   margin: 0 auto;
   display: block;
 }
-.map{
+top .map{
   margin: 0 auto;
   width: 700px;
 }
-.map .text-area{
+top .map .text-area{
   margin-top: 30px;
 }
 
@@ -524,7 +523,7 @@ footer .sitemap-area{
     width: 75%;
     }
     header h1{
-    padding-top: 17px;
+    padding-top: 15px;
     }
     
   /* ナビゲーションエリア */
