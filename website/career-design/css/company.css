@@ -51,7 +51,7 @@
     margin-bottom: 10px;
     width: 55%;
     font-size: 0.9em;
-    line-height: 1.7;
+    line-height: 1.7em;
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
@@ -67,7 +67,7 @@
     border-collapse: collapse;
     width: 92%;
 }
-.subpage .company th, td {
+.subpage .company th,.subpage .company td {
     border-bottom: 1px solid #E6E6E6;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -77,6 +77,98 @@
 }
 .subpage .company th {
     font-weight: bold;
+}
+
+/*-------------------------------------
+　　【会社概要】レスポンシブ設定
+-------------------------------------*/
+@media screen and (min-width: 960px){
+    .company .name .tablet{
+        display: none;
+    }
+}
+@media screen and (max-width: 960px){
+    .subpage .company .inner .f-container img{
+        width: 50vw;
+    }
+    .subpage .company .f-container{
+        align-items:flex-start;
+    }
+    .subpage .company .shacho-message .message {
+    left: -100px;
+}
+    .subpage .company .shacho-message .message img{
+    width: 90%;
+}
+    .subpage .company .shacho-message .shacho {
+        right: 0px;
+        width: 45%;
+    }
+    .subpage .company .inner .shacho-message {
+    height: 500px;
+}
+    .company .name .tablet{
+        display: block;
+    }
+    .company .name .pc{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 641px){
+    .company .name .mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .subpage .company .inner .f-container img{
+        width: 100%;
+        margin: 30px 0px;
+    }
+    .subpage .company .inner .f-container .text{
+        width: calc(100% - 20px);
+    }
+    .subpage .company .f-container{
+        flex-direction: column-reverse;
+    }
+    .subpage .company .shacho-message .message {
+    left: -40px;
+}
+    .subpage .company .shacho-message .message img{
+    width: 95%;
+}
+    .subpage .company .shacho-message .shacho {
+        right: 10px;
+        width: 35%;
+    }
+    
+    .subpage .shacho-message {
+    height: 45vh;
+}
+    .company .name .mobile{
+        display: block;
+    }
+    .company .name .pc{
+        display: none;
+    }
+    .company .name .tablet{
+        display: none;
+    }
+    .subpage .company table  {
+        width: 95%;
+    }
+    .subpage .company th,.subpage .company td {
+        display: block;
+        padding-left:0px;
+    }
+    .subpage .company th{
+        padding-bottom: 5px;
+    }
+    .subpage .company td {
+        border-bottom: none;
+        padding-top: 5px;
+    }
 }
 
 

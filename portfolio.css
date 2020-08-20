@@ -292,6 +292,9 @@
         .main-title h1{
             font-size: 25px;
         }
+        .main-title p{
+            font-size:0.7em;
+        }
         .sub-works dt{
         float: none;
     }

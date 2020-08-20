@@ -4,12 +4,6 @@
 　　【免責事項・推奨環境】メインエリア
 -------------------------------------*/
 
-.disclaimer .text p {
-    padding-bottom: 20px;
-}
-.disclaimer .text{
-    margin-bottom: 60px;
-}
-.disclaimer .text h3{
-    margin-top: 30px;
+.subpage .disclaimer .text {
+    padding-bottom: 60px;
 }
