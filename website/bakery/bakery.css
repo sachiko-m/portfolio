@@ -169,11 +169,8 @@
         padding: 0px 0px 0px 10px;
     }
     .about .img02{
-        display: none;
-    }
-    .about h3{
-        margin-bottom: 10px;
-    }
+            display: none;
+        } 
     
     /* NEW */
     .new dl{
@@ -196,7 +193,7 @@
     /* MENU */
     .bread,.drink{
         overflow: hidden;
-        margin: 0px auto 40px auto;
+        margin-bottom: 0px auto 40px;
     }
     .menu .box{
         margin: 30px 10px 10px;
@@ -204,9 +201,9 @@
         float: left;
     }
     .menu .bread .img,.menu .drink .img{
-        width: 200px;
-        position: relative;
-        margin-bottom: 10px;
+    width: 200px;
+    position: relative;
+    margin-bottom: 10px;
     }
     .menu .box .label{
         border-radius: 0px;
@@ -216,6 +213,9 @@
     }
     .menu img{
         border-radius: 5px;
+    }
+    .menu .img{
+        margin: 0 auto;
     }
 
     /*――――――――――――――――

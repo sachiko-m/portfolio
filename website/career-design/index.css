@@ -94,7 +94,7 @@ section{
 .fadein {
 	opacity : 0;
 	transform : translate(0px, 50px);
-	transition : all 1500ms;
+	transition : all 2000ms;
 	}
 
 /* 画面内に入った状態 */
@@ -107,6 +107,7 @@ section{
     サブページ　共通の設定
 --------------------------------*/
 .subpage {
+    background-color: #F9F9F9;
     padding: 30px 0 100px 0;
 }
 
@@ -216,7 +217,6 @@ header{
     margin-right: auto;
     float: left;
     width: 189px;
-    line-height: 1em;
 }
 nav{
     float: right;
@@ -408,7 +408,6 @@ nav ul a.header-contact-btn::after{
 
 /*　求人事例　*/
 .top-job{
-    z-index: -2;
     background-color: #F9F9F9;
     position: relative;
 }
@@ -449,7 +448,7 @@ nav ul a.header-contact-btn::after{
 }
 
 .top-job::before{
-    z-index: -1;
+    z-index: -99;
     content: "";
     display: block;
     position: absolute;
@@ -457,7 +456,7 @@ nav ul a.header-contact-btn::after{
     top: 0;
     border-width: 0px 0px 50vh 30vw ;
     border-style: solid;
-    border-color: transparent #A1DE64;
+    border-color: transparent #A1DE64 ;
 }
 .top-job::after{
     z-index: -99;
@@ -468,7 +467,7 @@ nav ul a.header-contact-btn::after{
     bottom: 0;
     border-width: 0px 0px 50vh 30vw ;
     border-style: solid;
-    border-color: #A1DE64 transparent;
+    border-color: #A1DE64  transparent;
 }
 
 
@@ -477,7 +476,6 @@ nav ul a.header-contact-btn::after{
   background-image: url("img/bg_faq.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
 }
 .top-faq .faqlist .box{
   background-color: #fff;
@@ -489,8 +487,7 @@ nav ul a.header-contact-btn::after{
   margin-bottom: 20px;
 }
 .top-faq .faqlist img{
-  margin-right: 20px;
-  margin-bottom: 5px;
+  margin-right: 30px;
 }
 
 /*　先輩の声　*/
@@ -682,9 +679,6 @@ footer .footer-contact .headline-a{
 .footer-link-area li{
     margin-bottom: 20px;
 }
-footer .footer-logo-area ul{
-    margin-top: 10px;
-}
 
 
 /*---------------------------------
@@ -758,16 +752,13 @@ footer .footer-logo-area ul{
     header .flexbox{
     flex-direction: column;
         align-items: stretch ;
-        padding-top: 30px;
+        padding-top: 70px;
       display: none;
 }
     header nav li{
         flex-basis :50px;
-        padding: 5px 0px;
+        padding: 10px 0px;
         text-align: center;
-    }
-    nav ul a{
-        padding: 10px 30px;
     }
     header nav li a.sub-color-black{
         color: #fff;
@@ -776,32 +767,27 @@ footer .footer-logo-area ul{
     position: fixed;
     top: 70px;
     right: 0;
-    bottom: 0px;
     width: 100%;
-    height: 100%;
-    margin-bottom: 100px;
     padding-bottom: 100px;
     overflow-y: scroll;
-    transform: translateZ(0);
-    -webkit-overflow-scrolling: touch;
-    background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.8);
     }
 .font-color-black{
     color: #fff;
     text-shadow: none;
 }
 	.nav-toggle{
-        width: 27px;
-        height: 23px;
+        width: 30px;
+        height: 26px;
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 23px;
         cursor: pointer;
         z-index: 999;
     }
     .nav-toggle span{
         width: 100%;
-        height: 2px;
+        height: 3px;
         display: block;
         position: absolute;
         left: 0px;
@@ -813,10 +799,10 @@ footer .footer-logo-area ul{
         
     }
     .nav-toggle span:nth-child(2){
-        top: 10px;
+        top: 11px;
     }
     .nav-toggle span:nth-child(3){
-        top: 20px;
+        top: 22px;
     }
 .nav-toggle.open span:nth-child(1){
         top: 11px;
@@ -893,35 +879,18 @@ footer .footer-logo-area ul{
   
 
 @media screen and (max-width: 640px){
-    header{
-        height: 40px;
-        padding-top: 8px;
-    }
-    header h1 img{
-        width: 70%;
-    }
-    header nav ul{
-        top:48px;
-    }
-    .nav-toggle{
-        right: 20px;
-        top: 13px;
-    }
     /* メインイメージ */
     .top-heroimage{
     background-image: url("img/mainimage_mobile.png");
-        background-position: right -70px top 0px;
-         background-size: cover;
-        min-height: 500px!important;
+      background-position: right -200px top 0px;
   }    
   .top-heroimage-cat img{
-    top: 50vh;
-    left: -40px;
-    width: 85vw;
+    top: 70vh;
+    width: 90vw;
     height: auto;
 }
   .sub-title h2 {
-  font-size: 20px;
+  font-size: 30px;
 }
 .sub-mainimage p  {
   font-size: 20px;
@@ -946,7 +915,7 @@ footer .footer-logo-area ul{
         position: static;
         margin: 30px auto;
         width: 94%;
-        background-color:transparent;
+        background-color: rgba(255,255,255,0.9);
     }
     .top-voice img{
         position: static;
@@ -954,6 +923,7 @@ footer .footer-logo-area ul{
         padding-top: 20px;
         display: block;
         z-index: 20;
+        box-shadow: none;
 }
     .top-voice .voice-text{
         float: right;
@@ -961,30 +931,18 @@ footer .footer-logo-area ul{
         position: relative;
         width: auto;
         padding: 5%;
-        margin-top: 10px;
-        background-color: rgba(255,255,255,0.9);
+        background-color: none;
     }
-     /* フッター */
-    .footer-main-area .flexbox{
+  .footer-main-area .flexbox{
     flex-direction:column;
   }
+    
+    /* フッターお問い合わせ */
     .footer-contact .flexbox{
         flex-direction:column-reverse;
         text-align: center;
     }
-    .footer-contact .footer-contact-btn-tb a{
-        font-size:1.2em;
-        padding: 10px 40px;
-    }
-    .contact-tel{
-        font-size: 1.8em
-    }
-    .footer-tel{
-        font-size: 1.8em
-    }
-    .copyright{
-        font-size: 0.6em
-    }
+    /* TOPへ戻るボタン */
     .gotop{
         right:10px;
         bottom:10px;

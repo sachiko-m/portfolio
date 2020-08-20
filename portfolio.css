@@ -121,6 +121,7 @@
         width: 840px;
         padding: 40px 60px;
         background-color: #fff;
+        -moz-background-color: #fff;
         margin-bottom: 90px;
     }
     .sub-works img{

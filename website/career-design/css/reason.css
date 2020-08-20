@@ -41,15 +41,10 @@
 @media screen and (max-width: 960px){
     
   /* サブページのレスポンシブル設定 */
-    .subpage .reason .reason-box{
+  .subpage .reason .reason-box{
         flex-direction: column;
         align-items:center;
     }
-    .subpage .reason .text-area{
-    padding: 30px 15px;
-}
-}
-
     
 
 

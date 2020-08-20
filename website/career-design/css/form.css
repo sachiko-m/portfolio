@@ -4,13 +4,14 @@
 　　【お問い合わせ】メインエリア
 -------------------------------------*/
 
+.subpage .contact .inner {
+	margin: 0 auto;
+}
+
 .subpage .contact #form1 table {
-    border-collapse: collapse;
-    margin-top: 10px;
-    width: 95%;
-    margin: 0 auto;
-    /* [disabled]margin-left: auto; */
-    /* [disabled]margin-right: auto; */
+	border-collapse: collapse;
+	margin-top: 10px;
+
 }
 .subpage .contact #form1 textarea::placeholder {
 	color: #BBBBBB;
@@ -19,18 +20,7 @@
 .subpage .contact #form1 input::placeholder {
 	color: #BBBBBB;
 }
-.subpage .contact #form1 textarea{
-        width: 95%;
-    }
-#form1 input#textfield,#form1 input#textfield2,#form1 input#textfield3,#form1 input#textfield4,#form1 input#email{
-        width: 95%;
-    }
-#form1 input#tel,#form1 input#textfield5{
-    width: 60%;
-}
-#form1 input#textfield6{
-    width: 50px
-}
+
 .subpage .contact #form1 th {
 	text-align: left;
 	border-bottom: 1px solid #65CD6A;
@@ -43,13 +33,14 @@
 	border-top: 1px solid #65CD6A;
 }
 .subpage .contact #form1 .text {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    background-color: #FFFFFF;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 1.2em;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	/* [disabled]color: #1A7F1F; */
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.2em;
 }
 
 .subpage .contact #form1 td {
@@ -84,24 +75,4 @@
 }
 .block{
     display: block;
-}
-
-/*-------------------------------------
-　　【お問い合わせ】レスポンシブ設定
--------------------------------------*/
-
-@media screen and (max-width: 640px){
-    .subpage .contact #form1 th,.subpage .contact #form1 td {
-        display: block;
-        border-bottom: none;
-    }
-    .subpage .contact #form1 th{
-        padding: 10px;
-    }
-    .subpage .contact #form1 td{
-        padding: 15px 10px 40px 10px;
-    }
-    .subpage .contact #form1 th.text{
-        border-top:none;
-    }
 }

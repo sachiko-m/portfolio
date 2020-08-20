@@ -4,16 +4,11 @@
 　　【採用情報】メインエリア
 -------------------------------------*/
 .recruit-cat{
-    text-align: center;
-}
-.recruit .recruit-cat p{
   font-size: 1.5em;
   width: 31em;
   margin: 0 auto;
   padding-bottom: 5px;
-  background: linear-gradient(transparent 95%, #3FC26F 100%);
-  display: inline;
-  text-align: center;
+  border-bottom: 1px solid #3FC26F;
 }
 .recruit table  {
     margin-top: 30px;
@@ -21,7 +16,7 @@
     margin-left: auto;
     margin-bottom: 40px;
     border-collapse: collapse;
-    width: 95%;
+    width: 92%;
 }
 .recruit th, td {
     border-bottom: 1px solid #E6E6E6;
@@ -48,22 +43,3 @@
     display: block
 }
 
-/*-------------------------------------
-　　【採用情報】レスポンシブ設定
--------------------------------------*/
-@media screen and (max-width: 640px){
-    .recruit .recruit-cat p{
-        margin-top: 10px;
-        font-size: 1em;
-        line-height: 2.3em;
-    }
-    .recruit td {
-        display: block;
-        padding: 10px 5px 40px 5px;
-    }
-    .recruit th{
-        display: block;
-        background-color: #e6e6e6;
-        padding: 3px 10px
-    }
-}
