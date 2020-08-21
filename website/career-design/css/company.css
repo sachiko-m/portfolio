@@ -140,11 +140,11 @@
 }
     .subpage .company .shacho-message .shacho {
         right: 10px;
-        width: 35%;
+        width: 42%;
     }
     
     .subpage .shacho-message {
-    height: 45vh;
+    height: 340px;
 }
     .company .name .mobile{
         display: block;
